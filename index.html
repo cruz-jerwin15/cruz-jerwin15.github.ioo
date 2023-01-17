@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aling Nena</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Aling Nena</a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Aling Nena</a>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active me-xl-5 me-lg-4 me-md-3"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="#">Gadget</a>
+              </li>
+              <li class="nav-item d-xs-block d-sm-none">
+                <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="#">Account</a>
+              </li>
+              <li class="nav-item d-xs-block d-sm-none">
+                <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="#">Cart</a>
+              </li>
+              <li class="nav-item mt-3 mb-3">
+                <form class="d-flex">
+                  <div class="input-group input-group-md me-5">
+                    <span
+                      class="input-group-text search-icon d-xs-block d-sm-none"
+                      id="search"
+                    >
+                      <iconify-icon
+                        icon="material-symbols:search"
+                      ></iconify-icon>
+                    </span>
+                    <input
+                      class="form-control search-input d-xs-block d-sm-none"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                      aria-describedby="search"
+                    />
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </div>
+
+          <form class="d-flex">
+            <div class="input-group input-group-sm me-5">
+              <span
+                class="input-group-text search-icon d-none d-md-block"
+                id="search"
+              >
+                <iconify-icon icon="material-symbols:search"></iconify-icon>
+              </span>
+              <input
+                class="form-control search-input d-none d-md-block"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="search"
+              />
+            </div>
+          </form>
+          <!-- Icon for account and cart -->
+          <div
+            class="justify-content-center d-none d-sm-block d-md-block d-lg-none mt-2"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item d-sm-block d-md-none">
+                <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="#">
+                  <iconify-icon
+                    width="1.6em"
+                    icon="material-symbols:search"
+                  ></iconify-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="#">
+                  <iconify-icon
+                    width="1.4em"
+                    icon="ic:baseline-account-circle"
+                  ></iconify-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="#">
+                  <iconify-icon
+                    width="1.4em"
+                    icon="material-symbols:shopping-cart-rounded"
+                  ></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Word link of account and cart -->
+          <div class="justify-content-center d-none d-lg-block">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="#">Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="#">Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  </body>
+</html>
