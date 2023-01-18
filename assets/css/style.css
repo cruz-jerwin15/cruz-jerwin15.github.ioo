@@ -1,3 +1,4 @@
+/* Global Start */
 *{
     margin:0;
     padding:0;
@@ -7,6 +8,8 @@ body{
     color: #4d5e80;
     font-size: 16px;
 }
+/* Global End */
+/* Navbar Start */
 .search-icon{
     border-radius: 1em 0 0 1em!important;
 }
@@ -23,6 +26,8 @@ body{
     padding: 0 1em;
     color: #4d5e80;
 }
+/* Navbar End */
+/* Title Header Start */
 .title-header{
    margin-top:1em;
 
@@ -40,6 +45,8 @@ body{
     left:-3.7em;
     z-index: 0;
 }
+/* Title Header End */
+/* Banner Product Start */
 section{
     /* border:1px solid red; */
     width:70%;
@@ -146,7 +153,8 @@ section{
     color:#4d5e80;
     font-weight: 700; 
 }
-
+/* Banner Product End */
+/* Subscription Start */
 .subs{
     background-color: chocolate;
     border-radius: 10px;
@@ -204,14 +212,68 @@ section{
     color: chocolate;
     font-weight: 600;
 }
+/* Subscription End */
+/* Footer Start */
 footer{
     width:70%;
     margin: auto;
     /* border:1px solid red; */
     margin-top:2em;
 }
+/* Footer End */
 
+
+/* Womens Title Start*/
+.women-header{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+}
+.women-header span:nth-of-type(1){
+    font-size: 1.2em;
+    font-weight: 700;
+    /* overflow: auto; */
+}
+
+.sort-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top:3em;
+}
+.sort-product a{
+    font-size: 0.75em;
+}
+.sort-active{
+    color:chocolate;
+}
+
+.sort-list{
+    background-color: chocolate;
+    color:white;
+    padding:0.1em 1em;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+/* Womens HEader End */
+
+@media only screen and (max-width:992px) {
+    /* Women Header Start*/
+    
+   .women-header span:nth-of-type(1){
+    font-size: 1.2em;
+    /* margin-top:20em; */
+   }
+    /*Women HEader End  */
+    
+}
 @media only screen and (max-width: 768px) {
+    /* Banner Product Start */
     .description{
         font-size:1em;
         text-align: center;
@@ -225,6 +287,8 @@ footer{
         /* padding:13em 1em 13em 1em; */
         height:22em;
     }
+    /* Banner Product End */
+    /* Subscription Start */
     .new-form{
         display: flex;
         flex-direction: column;  
@@ -239,10 +303,20 @@ footer{
         font-weight: 600;
         margin-top: 1em;
     }
+    /* Subscription End */
+      /* Women Header Start*/
+      
+      .women-header span:nth-of-type(1){
+        font-size: 1.2em;
+        /* margin-top:10em; */
+       }
+  
+    /*Women HEader End  */
     
 }
 
 @media only screen and (max-width: 576px) {
+    /* Banner Product Start */
     .promo h3:nth-of-type(3){
         font-size:2.2em;
         color:chocolate;
@@ -259,4 +333,15 @@ footer{
         color:white;
         font-weight: 700;
     }
+      /* Women Header Start*/
+      .women-header span:nth-of-type(1){
+        font-size: 1em;
+        margin-top:5em;
+       }
+       .sort-product{
+        margin-top:-4.8em;
+       }
+    
+    /*Women HEader End  */
+    /* Banner Product End */
 }
