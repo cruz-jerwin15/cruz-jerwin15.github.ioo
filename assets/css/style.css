@@ -301,7 +301,7 @@ article{
     }
     .card-promo img{
         /* padding:13em 1em 13em 1em; */
-        height:22em;
+        height:14.9em;
     }
     /* Banner Product End */
     /* Subscription Start */
@@ -357,7 +357,13 @@ article{
        .sort-product{
         margin-top:-4.8em;
        }
-    
+       .card-promo{
+        height:30.2em;
+    }
+    .card-promo img{
+        /* padding:13em 1em 13em 1em; */
+        height:20.9em;
+    }
     /*Women HEader End  */
     /* Banner Product End */
 }
