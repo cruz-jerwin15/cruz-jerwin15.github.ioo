@@ -262,6 +262,22 @@ footer{
 }
 /* Womens HEader End */
 
+/* Women Page Content Start*/
+article{
+    width:70%;
+    margin: auto;
+    margin-top:2em;
+   /* border:1px solid red; */
+}
+.type-dress{
+    border-bottom: none;
+    cursor: pointer;
+}
+.type-dress-last{
+    cursor: pointer;
+}
+/* Women Page Content ENd*/
+
 @media only screen and (max-width:992px) {
     /* Women Header Start*/
     
