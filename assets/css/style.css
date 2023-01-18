@@ -146,11 +146,7 @@ section{
     color:#4d5e80;
     font-weight: 700; 
 }
-.subscription{
-    /* border:1px solid red; */
-    /* background-color: chocolate; */
-   
-}
+
 .subs{
     background-color: chocolate;
     border-radius: 10px;
@@ -158,17 +154,18 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top:4em;
-    padding-bottom:4em;
+    padding:4em 3em 4em 3em;
 }
 .subs h3{
     font-size:1.7em;
     color:white;
+    text-align: center;
 }
 .subs p{
     font-size:1em;
     color:white;
     opacity: 50%;
+    text-align: center;
 }
 .new-form{
     display: flex;
@@ -207,6 +204,12 @@ section{
     color: chocolate;
     font-weight: 600;
 }
+footer{
+    width:70%;
+    margin: auto;
+    /* border:1px solid red; */
+    margin-top:2em;
+}
 
 @media only screen and (max-width: 768px) {
     .description{
@@ -222,6 +225,21 @@ section{
         /* padding:13em 1em 13em 1em; */
         height:22em;
     }
+    .new-form{
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center; 
+    }
+    .new-form button{
+        padding:0.7em 2em 0.7em 2em;
+        border-radius: 30px;
+        border:none;
+        color: chocolate;
+        font-weight: 600;
+        margin-top: 1em;
+    }
+    
 }
 
 @media only screen and (max-width: 576px) {
