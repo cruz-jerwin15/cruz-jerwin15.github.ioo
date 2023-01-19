@@ -346,6 +346,24 @@ article{
     background-color: skyblue;
 }
 /* Color filter end */
+/* Size filter start */
+.label-check{
+    display: flex;
+    justify-content: flex-start;
+}
+.label-check label{
+    color:#4d5e80;
+}
+.label-check input{
+    background-color: #999;
+    border-radius: 50%;
+}
+.label-check input:checked{
+    background-color: chocolate;
+    border-radius: 50%;
+    border:none;
+}
+/* Size filter end */
 @media only screen and (max-width:992px) {
     /* Women Header Start*/
     
