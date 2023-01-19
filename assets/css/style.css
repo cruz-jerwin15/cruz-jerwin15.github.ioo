@@ -289,9 +289,63 @@ article{
     background-color: chocolate !important;
     color:white !important;
 }
-
-
 /* Price Slider end */
+/* COlor filter start */
+.color-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.color-name{
+    font-size: 0.8em;
+    cursor: pointer;
+}
+.color-choose{
+    width:1.5em;
+    height:1.5em;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+.purple{
+    background-color: purple;
+}
+.black{
+    background-color: black;
+}
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+.blue{
+    background-color: blue;
+}
+.white{
+    background-color: white;
+    border:1px solid #999;
+}
+.brown{
+    background-color: brown;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.gray{
+    background-color: gray;
+}
+.pink{
+    background-color: pink;
+}
+.skyblue{
+    background-color: skyblue;
+}
+/* Color filter end */
 @media only screen and (max-width:992px) {
     /* Women Header Start*/
     
