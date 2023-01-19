@@ -278,6 +278,20 @@ article{
 }
 /* Women Page Content ENd*/
 
+/* Price SLider start */
+.price-range{
+    width:100%;
+    height:7em;
+    color:#4d5e80;
+    font-weight: 600;
+}
+.accordion-color{
+    background-color: chocolate !important;
+    color:white !important;
+}
+
+
+/* Price Slider end */
 @media only screen and (max-width:992px) {
     /* Women Header Start*/
     
