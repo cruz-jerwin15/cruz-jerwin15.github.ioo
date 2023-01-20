@@ -114,6 +114,7 @@ section{
     color:white;
     font-weight: 700;
 }
+
 .promo2 .banner-btn{
     
     background-color: rgba(0,0,0,.2);
@@ -293,7 +294,9 @@ footer{
     font-weight: 700;
     /* overflow: auto; */
 }
-
+a{
+    text-decoration: none;
+}
 .sort-product{
     display: flex;
     flex-direction: row;
@@ -420,6 +423,144 @@ article{
     border:none;
 }
 /* Size filter end */
+/* Women Single Post Start*/
+.single-post{
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    /* background-color: rgba(77, 94, 128,0.1); */
+}
+.category{
+    color:chocolate;
+}
+.post-title{
+    /* border: 1px solid red; */
+    background-color: rgba(77, 94, 128,0.1);
+    border-radius: 15px 0 0 15px;
+    padding:5em 2em;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.post-title h3{
+    font-size: 1.4rem;
+}
+.add-cart{
+    padding:0.5em 1.5em;
+    border:1px solid #ddd;
+    background-color: chocolate;
+    border-radius:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.add-cart:hover{
+    padding:0.5em 1.5em;
+    border:1px solid #ddd;
+    background-color: rgb(121, 59, 14);
+    
+}
+.icon-color{
+    color:white;
+}
+.add-cart span{
+    font-weight: 600;
+    color:white;
+}
+.cart-wish{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wish-btn{
+    /* padding:1em 1em; */
+    width:3em;
+    height: 3em;
+    border:1px solid #ddd;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.wish-btn:hover{
+    /* padding:1em 1em; */
+   
+    border:1px solid chocolate;
+   
+}
+.post-title h2{
+    font-size: 2em;
+    font-weight: 700;
+}
+.size-btn{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid green; */
+    padding:0em 5em;
+}
+.size-btn div{
+    width:3em;
+    height: 3em;
+    border:1px solid #ddd;
+    border-radius:50%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer; 
+}
+.size-btn div:hover{
+    border:1px solid chocolate;
+}
+#sm-btn{
+    border:1px solid chocolate;
+}
+.size-btn h3{
+font-size: 1.3em;
+}
+
+.dress-img{
+    border-radius: 0 15px 15px 0;
+    padding:0;
+    /* background-image: url('../images/dress_1.jpg'); */
+    background-repeat: no-repeat;
+    background-color: rgba(77, 94, 128,0.1);
+}
+.dress-img img{
+    overflow: hidden;
+    border-radius: 0 15px 15px 0;
+}
+.other-img{
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.other-img img{
+    width:10em;
+    height:12.5em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.dress-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.tab-title{
+color:#4d5e80;
+font-weight: 600;
+}
+
+/* Women Single Post End */
+
 @media only screen and (max-width:992px) {
     /* Women Header Start*/
     
@@ -428,7 +569,14 @@ article{
     /* margin-top:20em; */
    }
     /*Women HEader End  */
-    
+    /* Women Single Post Start */
+    .post-title{
+        border-radius: 15px;
+       }
+    /* Women SIngle Post End */
+    /* .size-btn{
+        padding:0em 0em;
+    } */
 }
 @media only screen and (max-width: 768px) {
     /* Banner Product Start */
@@ -457,10 +605,12 @@ article{
         padding:0.7em 2em 0.7em 2em;
         border-radius: 30px;
         border:none;
-        color: chocolate;
+        color: white;
         font-weight: 600;
+        /* background-color: green; */
         margin-top: 1em;
     }
+    
     /* Subscription End */
       /* Women Header Start*/
       
@@ -470,7 +620,11 @@ article{
        }
   
     /*Women HEader End  */
-    
+    /* Women Single Post Start */
+       .post-title{
+        border-radius: 15px;
+       }
+    /* Women SIngle Post End */
 }
 
 @media only screen and (max-width: 576px) {
@@ -505,6 +659,9 @@ article{
     .card-promo img{
         /* padding:13em 1em 13em 1em; */
         height:20.9em;
+    }
+    .size-btn{
+        padding:0em 3em;
     }
     /*Women HEader End  */
     /* Banner Product End */
