@@ -164,6 +164,27 @@ section{
     align-items: center;
     padding:4em 3em 4em 3em;
 }
+.subs-invert{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:4em 3em 4em 3em;
+}
+.subs-invert h3{
+    font-size:1.7em;
+    color:#4d5e80;
+    text-align: center;
+}
+.subs-invert p{
+    font-size:1em;
+    color:#4d5e80;
+    opacity: 50%;
+    text-align: center;
+}
 .subs h3{
     font-size:1.7em;
     color:white;
@@ -185,6 +206,20 @@ section{
     border-radius: 30px;
     display: flex;
 }
+.input-container-invert{
+    padding:0.7em 2em 0.7em 2em;
+    background-color: white;
+    border:1px solid #ddd;
+    border-radius: 30px;
+    display: flex;
+}
+.input-container-invert input{
+    border: none;
+    outline-style: none;
+    background-color: white;
+    color:white;
+    padding-left:1em;
+}
 .input-container input{
     border: none;
     outline-style: none;
@@ -192,10 +227,23 @@ section{
     color:white;
     padding-left:1em;
 }
+.input-container-invert input::placeholder{
+    border: none;
+    background-color: white;
+    color:#4d5e80;
+    outline-style: none;
+}
 .input-container input::placeholder{
     border: none;
     background-color: rgb(139, 60, 3);
     color:white;
+    outline-style: none;
+}
+.input-container-invert input:focus{
+    border: none;
+    background-color: white;
+    color:#4d5e80;
+    padding-left:1em;
     outline-style: none;
 }
 .input-container input:focus{
@@ -211,6 +259,14 @@ section{
     border:none;
     color: chocolate;
     font-weight: 600;
+}
+.new-form button{
+    padding:0.7em 2em 0.7em 2em;
+    border-radius: 30px;
+    border:none;
+    color: white;
+    font-weight: 600;
+    background-color: chocolate;
 }
 /* Subscription End */
 /* Footer Start */
