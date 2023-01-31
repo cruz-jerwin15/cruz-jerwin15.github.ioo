@@ -570,7 +570,7 @@ font-weight: 600;
     color:white !important;
 }
 .watch-img{
-    height:25rem;
+    height:27rem;
     border: 1px solid #cfd0d2;
     border-radius:10px;
     overflow: hidden;
@@ -604,7 +604,19 @@ font-weight: 600;
     color:white;
 }
  /* Women Single Post End */ 
-
+ 
+@media only screen and (max-width:1200px) {
+    .watch-img{
+        height:23rem;
+        border: 1px solid #cfd0d2;
+        border-radius:10px;
+        overflow: hidden;
+        padding: 0;
+        text-align: center;
+        width:96%;
+        margin: auto;
+    }
+}
 @media only screen and (max-width:992px) {
     /* Women Header Start*/
     /* md */
