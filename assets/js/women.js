@@ -1,18 +1,122 @@
 
 import Product from './product.js';
 const productList = new Product();
-const promoList = document.querySelector('#promoList');
+const promoList = document.querySelector('#dress-list');
 const spin = document.querySelector('#spin');
 const homeLabel = document.querySelector('#homeLabel');
 const searchLg = document.querySelector('#searchLg');
 const searchXl = document.querySelector('#searchXl');
-let productChoose;
+const categoryList = document.querySelector('#category-list');
+let btnCat;
 
-if(localStorage.getItem('singleProduct')!=null){
-    localStorage.setItem('singleProduct','ALL');
-}else{
-    localStorage.setItem('singleProduct','ALL');
+const fromInput = document.querySelector('#from-input');
+const toInput = document.querySelector('#to-input');
+const fromValue = document.querySelector('#from-value');
+const toValue = document.querySelector('#to-value');
+let max=0;
+let min = 10000000;
+let categories="ALL";
+
+
+
+// categoryDiv.forEach(cat=>{
+//     cat.addEventListener('click',()=>{
+//         console.log("TEST");
+//         console.dir(cat);
+
+//     });
+// });
+
+
+
+
+
+// Price
+fromInput.addEventListener('input',()=>{
+    
+    if(parseInt(fromInput.value)>parseInt(toInput.value)){
+        toInput.value=parseInt(fromInput.value)+1;
+        toValue.innerText = toInput.value;
+        
+    }
+    fromValue.innerText = `PHP. ${fromInput.value}`;
+    min=parseInt(fromInput.value)+1;
+    displayByPrice();
+
+});
+
+toInput.addEventListener('input',()=>{
+    if(parseInt(toInput.value)<parseInt(fromInput.value)){
+        fromInput.value=parseInt(toInput.value)-1;
+        fromValue.innerText = fromInput.value;
+    }
+    toValue.innerText = `PHP. ${toInput.value}`;
+    max = parseInt(toInput.value)-1;
+    displayByPrice();
+});
+
+const displayMinandMaxPrice =(values)=>{
+    max=0;
+    min = 10000000;
+    values.forEach(val=>{
+        if(max<val.price_int){
+            max = val.price_int;
+        }
+
+        if(min>val.price_int){
+            min = val.price_int;
+        }
+        // console.log(`${val.price_int}`);
+       
+    });
+    fromInput.mix=min;
+    fromInput.max = max-1;
+    fromInput.value=min;
+    fromValue.innerText=`PHP. ${min}`;
+    toInput.mix=min+1;
+    toInput.max = max;
+    toInput.value=max;
+    toValue.innerText=`PHP. ${max}`;
+   
 }
+
+const displayByPrice=()=>{
+    homeLabel.innerText = "Women";
+    if(categories=="ALL"){
+        const results = productList.products.filter(product => product.category == "Women")
+        .filter(product=>product.price_int<=max)
+        .filter(product=>product.price_int>=min);
+            while (promoList.firstChild) {
+                promoList.removeChild(promoList.firstChild);
+            }
+            if(results.length>0){
+                showProduct(results);
+            }else{
+                homeLabel.innerHTML = '<span class="text-danger">Filtered no result</span>';
+            }
+    }else{
+        const results = productList.products.filter(product => product.category == "Women")
+        .filter(product=>product.price_int<=max)
+        .filter(product=>product.price_int>=min)
+        .filter(product=>product.type==categories);
+            while (promoList.firstChild) {
+                promoList.removeChild(promoList.firstChild);
+            }
+            if(results.length>0){
+                showProduct(results);
+            }else{
+                homeLabel.innerHTML = '<span class="text-danger">Filtered no result</span>';
+            }
+    }
+    
+        
+    
+    
+    // console.log(`Max: ${max}`);
+    // console.log(`Min: ${min}`);
+    // showProduct(results);
+}
+// End Price
 
 
 // Login
@@ -112,7 +216,7 @@ searchModalBtn.addEventListener('click',()=>{
 });
 searchLg.addEventListener('change',()=>{ 
     let search = searchLg.value;
-    searchProduct(search);
+    searchProduct(search);categoryDiv
 });
 searchXl.addEventListener('change',()=>{ 
     let search = searchXl.value;
@@ -124,7 +228,8 @@ const searchProduct=(search)=>{
    
     if(search.trim().length>0){
         homeLabel.innerText = "Search Product";
-        const results = productList.products.filter(product => product.product_name.toLowerCase().includes(search.toLowerCase())==true);
+        const results = productList.products.filter(product => product.product_name.toLowerCase().includes(search.toLowerCase())==true)
+        .filter(product => product.category=="Women");
         while (promoList.firstChild) {
             promoList.removeChild(promoList.firstChild);
         }
@@ -143,10 +248,12 @@ const searchProduct=(search)=>{
 
 const showPromo=()=>{
 
-    spin.style="display:none";
-    homeLabel.innerText = "New Promo"
-    const results = productList.products.filter(product => product.promo == "YES");
+    // spin.style="display:none";
+    homeLabel.innerText = "Women"
+    const results = productList.products.filter(product => product.category == "Women");
     showProduct(results);
+    
+    displayMinandMaxPrice(results);
    
 }
 
@@ -154,9 +261,7 @@ const showProduct=(results)=>{
     results.forEach(result=>{
         
         let outerDiv = document.createElement('DIV');
-        outerDiv.setAttribute('style','cursor:pointer');
-        outerDiv.setAttribute('id',result.id);
-        outerDiv.setAttribute('class','productChoose col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-4');
+        outerDiv.setAttribute('class','mt-2 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12');
             
         let cardDiv = document.createElement('DIV');
         cardDiv.setAttribute('class','card card-promo');
@@ -188,20 +293,42 @@ const showProduct=(results)=>{
         
         promoList.append(outerDiv);
     });
-
-    productChoose = document.querySelectorAll('.productChoose');
-
 }
 
+const distinctCategory = productList.products.filter(
+    (element, index, self) => index === self.findIndex(
+      (t) => t.type === element.type && t.category === "Women"
+    )
+  );
+
+const getCategory=()=>{
+   distinctCategory.forEach(cat=>{
+    let countCategory = productList.products.filter(product => product.type==cat.type && product.category=="Women")
+    let count = countCategory.length;
+        let li = document.createElement('LI');
+        li.setAttribute('class','type-dress list-group-item d-flex justify-content-between align-items-start');
+        let buttonCat = document.createElement('BUTTON');
+        buttonCat.setAttribute('class','btnCat btn btn-outline-primary border-0 w-100 d-flex justify-content-between align-items-start');
+        // buttonCat.setAttribute('id',``);
+        let spanText = document.createElement('SPAN');
+        spanText.setAttribute('class','text-black-50 text-align-start');
+        spanText.innerHTML=cat.type;
+        let span = document.createElement('SPAN');
+        span.setAttribute('class','badge bg-warning rounded-pill');
+        span.innerText=`${count}`;
+
+      
+        li.append(buttonCat);
+        buttonCat.append(spanText);
+        buttonCat.append(span);
+        categoryList.append(li);
+   }); 
+
+   btnCat = document.querySelectorAll('.btnCat');
+}
 
 showPromo();
-
-productChoose.forEach(prod=>{
-    prod.addEventListener('click',()=>{
-        localStorage.setItem('singleProduct',prod.id);
-        window.open('single.html','_self');
-    })
-});
+getCategory();
 
 
 
@@ -226,3 +353,16 @@ subBtn.addEventListener('click',()=>{
     console.log(TestArray);
     
 });
+
+btnCat.forEach(button=>{
+    button.addEventListener('click',()=>{
+        let type = button.firstChild.innerText;
+        categories = type;
+        displayByPrice();
+    });
+});
+
+
+// categoryDiv.addEventListener('click',()=>{
+//     console.log("TEST");
+// });

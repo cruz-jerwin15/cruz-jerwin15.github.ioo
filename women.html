@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Women - Aling Nena</title>
+    <title>Home - Aling Nena</title>
     <link href="./assets/css/bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -44,117 +44,149 @@
                     >Women</a
                   >
                 </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle me-xl-5 me-lg-4 me-md-3"
-                    data-bs-toggle="dropdown"
-                    href="#"
-                    role="button"
-                    aria-expanded="false"
+                <li class="nav-item">
+                  <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="men.html"
                     >Men</a
                   >
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="watch.html">
-                        <iconify-icon
-                          width="1.2em"
-                          class="mt-2 me-2"
-                          icon="ic:baseline-watch"
-                        ></iconify-icon>
-                        Watch
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="shoes.html">
-                        <iconify-icon
-                          width="1.2em"
-                          class="mt-2 me-2"
-                          icon="icon-park-solid:spikedshoes"
-                        ></iconify-icon>
-                        Shoes
-                      </a>
-                    </li>
-                  </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="gadget.html"
-                    >Gadget</a
+                  <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="kids.html"
+                    >Kids</a
                   >
                 </li>
-                <li class="nav-item d-block d-sm-none">
+
+                <li class="nav-item d-xs-block d-sm-none">
                   <a
+                    id="loginXs"
                     class="nav-link me-xl-5 me-lg-4 me-md-3"
-                    href="account.html"
-                    >Account</a
+                    href="login.html"
+                    >Login</a
                   >
                 </li>
-                <li class="nav-item d-block d-sm-none">
+                <li class="nav-item d-xs-block d-sm-none">
                   <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="cart.html"
                     >Cart</a
                   >
                 </li>
                 <li class="nav-item mt-3 mb-3">
-                  <form class="d-flex">
-                    <div class="input-group input-group-md me-5">
-                      <span
-                        class="input-group-text search-icon d-block d-sm-none"
-                        id="search"
-                      >
-                        <iconify-icon
-                          icon="material-symbols:search"
-                        ></iconify-icon>
-                      </span>
-                      <input
-                        class="form-control search-input d-block d-sm-none"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                        aria-describedby="search"
-                      />
-                    </div>
-                  </form>
+                  <!-- <form class="d-flex"> -->
+                  <div class="input-group input-group-md me-5">
+                    <span
+                      class="input-group-text search-icon d-xs-block d-sm-none"
+                      id="search"
+                    >
+                      <iconify-icon
+                        icon="material-symbols:search"
+                      ></iconify-icon>
+                    </span>
+                    <input
+                      id="searchLg"
+                      class="form-control search-input d-xs-block d-sm-none"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                      aria-describedby="search"
+                    />
+                  </div>
+                  <!-- </form> -->
                 </li>
               </ul>
             </div>
 
-            <form class="d-flex">
-              <div class="input-group input-group-sm me-5">
-                <span
-                  class="input-group-text search-icon d-none d-md-block"
-                  id="search"
-                >
-                  <iconify-icon icon="material-symbols:search"></iconify-icon>
-                </span>
-                <input
-                  class="form-control search-input d-none d-md-block"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                  aria-describedby="search"
-                />
-              </div>
-            </form>
+            <!-- <form class="d-flex"> -->
+            <div class="input-group input-group-sm me-5">
+              <span
+                class="input-group-text search-icon d-none d-md-block"
+                id="search"
+              >
+                <iconify-icon icon="material-symbols:search"></iconify-icon>
+              </span>
+              <input
+                id="searchXl"
+                class="form-control search-input d-none d-md-block"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="search"
+              />
+            </div>
+            <!-- </form> -->
             <!-- Icon for account and cart -->
             <div
               class="justify-content-center d-none d-sm-block d-md-block d-lg-none mt-2"
             >
               <ul class="navbar-nav">
                 <li class="nav-item d-sm-block d-md-none">
-                  <a class="nav-link me-xl-5 me-lg-4 me-md-3" href="#">
+                  <a
+                    class="nav-link me-xl-5 me-lg-4 me-md-3"
+                    href="#searchModal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#searchModal"
+                  >
                     <iconify-icon
                       width="1.6em"
                       icon="material-symbols:search"
                     ></iconify-icon>
                   </a>
+                  <!-- Search Modal Start -->
+                  <div
+                    class="modal fade"
+                    id="searchModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Search Product
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <input
+                            id="searchModalText"
+                            type="text"
+                            placeholder="Search product here"
+                            class="form-control"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button
+                            id="searchModalBtn"
+                            type="button"
+                            class="btn btn-primary"
+                          >
+                            Search
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Search Modal End -->
                 </li>
                 <li class="nav-item">
                   <a
+                    id="loginIcon"
                     class="nav-link me-xl-5 me-lg-4 me-md-3"
-                    href="account.html"
+                    href="login.html"
                   >
                     <iconify-icon
                       width="1.4em"
-                      icon="ic:baseline-account-circle"
+                      icon="material-symbols:lock"
                     ></iconify-icon>
                   </a>
                 </li>
@@ -173,9 +205,10 @@
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <a
+                    id="loginLg"
                     class="nav-link me-xl-5 me-lg-4 me-md-3"
-                    href="account.html"
-                    >Account</a
+                    href="login.html"
+                    >Login</a
                   >
                 </li>
                 <li class="nav-item">
@@ -188,78 +221,17 @@
           </div>
         </nav>
       </header>
-      <section class="mt-2">
+      <section class="mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-sm-5 mt-xs-5">
         <div class="container">
           <div class="row">
             <div
-              class="women-header col-xxl-4 col-xl-4 col-lg-4 col-md-8 col-sm-8 col-8"
+              class="women-header col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
             >
-              <span>Women's Clothing</span>
-            </div>
-            <div
-              class="sort col-xxl-8 col-xl-8 col-lg-8 col-md-4 col-sm-4 col-4"
-            >
-              <div class="justify-content-end d-none d-lg-block">
-                <ul class="navbar-nav sort-product">
-                  <li class="nav-item">
-                    <a class="nav-link me-lg-3 me-md-3" href="#" disabled>
-                      Sort by:
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link me-lg-3 me-md-3" href="#">
-                      Recommended
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link me-lg-3 me-md-3" href="#"> New </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link me-lg-3 me-md-3 sort-active" href="#">
-                      Lowest Price
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"> Highest Price </a>
-                  </li>
-                </ul>
-              </div>
-              <!-- If sm display -->
-              <div class="justify-content-end d-block d-lg-none">
-                <ul class="navbar-nav sort-product">
-                  <li class="nav-item dropdown sort-list">
-                    <a
-                      class="nav-link dropdown-toggle me-xl-5 me-lg-4 me-md-3"
-                      data-bs-toggle="dropdown"
-                      href="#"
-                      role="button"
-                      aria-expanded="false"
-                      >Sort by :</a
-                    >
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="#">Recommended</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">New</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item sort-active" href="#"
-                          >Lowest Price</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Highest Price</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+              <span id="homeLabel">Women Clothings</span>
             </div>
           </div>
         </div>
       </section>
-      <!-- Start for Changing -->
       <section>
         <div class="container-fluid">
           <div class="row">
@@ -267,7 +239,7 @@
               <!-- Filter Here -->
               <div class="row">
                 <!-- Product Filter Start -->
-                <div class="col-xxl-12 col-xl-12 col-lg-12">
+                <div class="mt-2 col-xxl-12 col-xl-12 col-lg-12">
                   <div class="accordion" id="accordionProduct">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingOne">
@@ -279,7 +251,7 @@
                           aria-expanded="true"
                           aria-controls="collapseProduct"
                         >
-                          Products
+                          Category
                         </button>
                       </h2>
                       <div
@@ -290,87 +262,8 @@
                       >
                         <div class="accordion-body">
                           <!-- Lis group start here -->
-                          <ul class="list-group">
-                            <li
-                              class="type-dress list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">Blouse</div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >67</span
-                              >
-                            </li>
-                            <li
-                              class="type-dress list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">Dresses</div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >52</span
-                              >
-                            </li>
-                            <li
-                              class="type-dress list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">Jackets & Coats</div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >89</span
-                              >
-                            </li>
-                            <li
-                              class="type-dress list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">Knitwear</div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >140</span
-                              >
-                            </li>
-                            <li
-                              class="type-dress list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">Pants</div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >10</span
-                              >
-                            </li>
-                            <li
-                              class="type-dress list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">Skirts</div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >45</span
-                              >
-                            </li>
-                            <li
-                              class="type-dress list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">Tops & Tees</div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >20</span
-                              >
-                            </li>
-                            <li
-                              class="type-dress-last list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">Accessories</div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >14</span
-                              >
-                            </li>
+                          <ul class="list-group" id="category-list">
+                            <!-- Category List -->
                           </ul>
 
                           <!-- List group end -->
@@ -441,771 +334,43 @@
                   </div>
                 </div>
                 <!-- Price Filter end -->
-                <!-- Color filter start -->
-                <div
-                  class="mt-lg-2 mt-md-2 mt-sm-2 mt-2 col-xxl-12 col-xl-12 col-lg-12"
-                >
-                  <div class="accordion" id="accordionColor">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button
-                          class="accordion-button accordion-color"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseColor"
-                          aria-expanded="true"
-                          aria-controls="collapseColor"
-                        >
-                          Colors
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseColor"
-                        class="accordion-collapse collapse show"
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#accordionColor"
-                      >
-                        <div class="accordion-body">
-                          <!-- Color -->
-                          <div class="row">
-                            <div
-                              class="color-container col-xxl-3 col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2"
-                            >
-                              <div class="color-choose purple"></div>
-                              <h4 class="color-name">Purple</h4>
-                            </div>
-                            <div
-                              class="color-container col-xxl-3 col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2"
-                            >
-                              <div class="color-choose black"></div>
-                              <h4 class="color-name">Black</h4>
-                            </div>
-                            <div
-                              class="color-container col-xxl-3 col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2"
-                            >
-                              <div class="color-choose red"></div>
-                              <h4 class="color-name">Red</h4>
-                            </div>
-                            <div
-                              class="color-container col-xxl-3 col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2"
-                            >
-                              <div class="color-choose orange"></div>
-                              <h4 class="color-name">Orange</h4>
-                            </div>
-                            <div
-                              class="color-container col-xxl-3 col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2"
-                            >
-                              <div class="color-choose blue"></div>
-                              <h4 class="color-name">Blue</h4>
-                            </div>
-                            <div
-                              class="color-container col-xxl-3 col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2"
-                            >
-                              <div class="color-choose white"></div>
-                              <h4 class="color-name">White</h4>
-                            </div>
-                            <div
-                              class="color-container col-xxl-3 col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2"
-                            >
-                              <div class="color-choose brown"></div>
-                              <h4 class="color-name">Brown</h4>
-                            </div>
-                            <div
-                              class="color-container col-xxl-3 col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2"
-                            >
-                              <div class="color-choose green"></div>
-                              <h4 class="color-name">Green</h4>
-                            </div>
-                            <div
-                              class="color-container col-xxl-3 col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2"
-                            >
-                              <div class="color-choose yellow"></div>
-                              <h4 class="color-name">Yellow</h4>
-                            </div>
-                            <div
-                              class="color-container col-xxl-3 col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2"
-                            >
-                              <div class="color-choose gray"></div>
-                              <h4 class="color-name">Gray</h4>
-                            </div>
-                            <div
-                              class="color-container col-xxl-3 col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2"
-                            >
-                              <div class="color-choose pink"></div>
-                              <h4 class="color-name">Pink</h4>
-                            </div>
-                            <div
-                              class="color-container col-xxl-3 col-xl-3 col-lg-3 col-md-2 col-sm-2 col-2"
-                            >
-                              <div class="color-choose skyblue"></div>
-                              <h4 class="color-name">Blue</h4>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- COlor filter end -->
-                <!-- Size filter start -->
-                <div
-                  class="mt-lg-2 mt-md-2 mt-sm-2 mt-2 col-xxl-12 col-xl-12 col-lg-12"
-                >
-                  <div class="accordion" id="accordionSize">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button
-                          class="accordion-button accordion-color"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseSize"
-                          aria-expanded="true"
-                          aria-controls="collapseSize"
-                        >
-                          Size
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseSize"
-                        class="accordion-collapse collapse show"
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#accordionSize"
-                      >
-                        <div class="accordion-body">
-                          <div class="row">
-                            <div
-                              class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4"
-                            >
-                              <div class="ps-4 form-check label-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  value=""
-                                  name="size-check"
-                                  id="flexCheckDefault"
-                                />
-                                <label
-                                  class="form-check-label ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1"
-                                  for="flexCheckDefault"
-                                >
-                                  XXS
-                                </label>
-                              </div>
-                            </div>
-
-                            <div
-                              class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4"
-                            >
-                              <div class="form-check label-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="size-check"
-                                  value=""
-                                  id="flexCheckDefault"
-                                />
-                                <label
-                                  class="form-check-label ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1"
-                                  for="flexCheckDefault"
-                                >
-                                  3XL
-                                </label>
-                              </div>
-                            </div>
-
-                            <div
-                              class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4"
-                            >
-                              <div class="form-check label-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="size-check"
-                                  value=""
-                                  id="flexCheckDefault"
-                                />
-                                <label
-                                  class="form-check-label ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1"
-                                  for="flexCheckDefault"
-                                >
-                                  XS
-                                </label>
-                              </div>
-                            </div>
-
-                            <div
-                              class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4"
-                            >
-                              <div class="form-check label-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="size-check"
-                                  value=""
-                                  id="flexCheckDefault"
-                                />
-                                <label
-                                  class="form-check-label ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1"
-                                  for="flexCheckDefault"
-                                >
-                                  4XL
-                                </label>
-                              </div>
-                            </div>
-
-                            <div
-                              class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4"
-                            >
-                              <div class="form-check label-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="size-check"
-                                  value=""
-                                  id="flexCheckDefault"
-                                />
-                                <label
-                                  class="form-check-label ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1"
-                                  for="flexCheckDefault"
-                                >
-                                  S
-                                </label>
-                              </div>
-                            </div>
-
-                            <div
-                              class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4"
-                            >
-                              <div class="form-check label-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="size-check"
-                                  value=""
-                                  id="flexCheckDefault"
-                                />
-                                <label
-                                  class="form-check-label ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1"
-                                  for="flexCheckDefault"
-                                >
-                                  XS-S
-                                </label>
-                              </div>
-                            </div>
-
-                            <div
-                              class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4"
-                            >
-                              <div class="form-check label-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="size-check"
-                                  value=""
-                                  id="flexCheckDefault"
-                                />
-                                <label
-                                  class="form-check-label ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1"
-                                  for="flexCheckDefault"
-                                >
-                                  M
-                                </label>
-                              </div>
-                            </div>
-
-                            <div
-                              class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4"
-                            >
-                              <div class="form-check label-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="size-check"
-                                  value=""
-                                  id="flexCheckDefault"
-                                />
-                                <label
-                                  class="form-check-label ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1"
-                                  for="flexCheckDefault"
-                                >
-                                  S-M
-                                </label>
-                              </div>
-                            </div>
-
-                            <div
-                              class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4"
-                            >
-                              <div class="form-check label-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="size-check"
-                                  value=""
-                                  id="flexCheckDefault"
-                                />
-                                <label
-                                  class="form-check-label ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1"
-                                  for="flexCheckDefault"
-                                >
-                                  L
-                                </label>
-                              </div>
-                            </div>
-
-                            <div
-                              class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4"
-                            >
-                              <div class="form-check label-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="size-check"
-                                  value=""
-                                  id="flexCheckDefault"
-                                />
-                                <label
-                                  class="form-check-label ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1"
-                                  for="flexCheckDefault"
-                                >
-                                  M-L
-                                </label>
-                              </div>
-                            </div>
-
-                            <div
-                              class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4"
-                            >
-                              <div class="form-check label-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="size-check"
-                                  value=""
-                                  id="flexCheckDefault"
-                                />
-                                <label
-                                  class="form-check-label ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1"
-                                  for="flexCheckDefault"
-                                >
-                                  XL
-                                </label>
-                              </div>
-                            </div>
-
-                            <div
-                              class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4"
-                            >
-                              <div class="form-check label-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="size-check"
-                                  value=""
-                                  id="flexCheckDefault"
-                                />
-                                <label
-                                  class="form-check-label ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1"
-                                  for="flexCheckDefault"
-                                >
-                                  XS/P
-                                </label>
-                              </div>
-                            </div>
-
-                            <div
-                              class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4"
-                            >
-                              <div class="form-check label-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="size-check"
-                                  value=""
-                                  id="flexCheckDefault"
-                                />
-                                <label
-                                  class="form-check-label ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1"
-                                  for="flexCheckDefault"
-                                >
-                                  XXL
-                                </label>
-                              </div>
-                            </div>
-
-                            <div
-                              class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4"
-                            >
-                              <div class="form-check label-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  name="size-check"
-                                  value=""
-                                  id="flexCheckDefault"
-                                />
-                                <label
-                                  class="form-check-label ms-xxl-3 ms-xl-3 ms-lg-3 ms-lg-3 ms-md-3 ms-sm-1 ms-1"
-                                  for="flexCheckDefault"
-                                >
-                                  XS/P
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Size -->
-                </div>
-
-                <!-- Size filter end -->
-                <!-- Dress Style start -->
-                <div
-                  class="mt-lg-2 mt-md-2 mt-sm-2 mt-2 col-xxl-12 col-xl-12 col-lg-12"
-                >
-                  <div class="accordion" id="accordionDressStyle">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button
-                          class="accordion-button accordion-color"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseDressStyle"
-                          aria-expanded="true"
-                          aria-controls="collapseDressStyle"
-                        >
-                          Dress Style
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseDressStyle"
-                        class="accordion-collapse collapse show"
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#accordionDressStyle"
-                      >
-                        <div class="accordion-body">
-                          <ul class="list-group">
-                            <li
-                              class="type-dress list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">Without Sleeves</div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >87</span
-                              >
-                            </li>
-                            <li
-                              class="type-dress list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">Long/Long</div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >52</span
-                              >
-                            </li>
-                            <li
-                              class="type-dress list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">Long Sleeves</div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >89</span
-                              >
-                            </li>
-                            <li
-                              class="type-dress list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">Knee Length</div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >140</span
-                              >
-                            </li>
-                            <li
-                              class="type-dress list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">Short Sleeve</div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >10</span
-                              >
-                            </li>
-                            <li
-                              class="type-dress list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">
-                                  Three Quarter Sleeve
-                                </div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >45</span
-                              >
-                            </li>
-                            <li
-                              class="type-dress-last list-group-item d-flex justify-content-between align-items-start"
-                            >
-                              <div class="ms-2 me-auto">
-                                <div class="text-black-50">Long Skirt</div>
-                              </div>
-                              <span class="badge bg-primary rounded-pill"
-                                >20</span
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Dress Style end -->
               </div>
               <!-- Filter End -->
             </div>
             <div class="col-xxl-8 col-xl-8 col-lg-8">
               <!-- Product Here -->
-              <div class="row" id="dress-list">
-                <div
-                  class="mt-2 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12"
-                >
-                  <!-- <a href="women-single.html"> -->
-                  <div class="card card-promo">
-                    <img
-                      src="https://n.nordstrommedia.com/id/sr3/e52b3d19-7611-4b25-9342-f46ce7a75975.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text description mt-3">
-                        Dress with Round Neckline & Long Sleeves
-                      </p>
-                      <p class="description mt-2">$120</p>
-                    </div>
-                  </div>
-                  <!-- </a> -->
-                </div>
-                <div
-                  class="mt-2 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12"
-                >
-                  <div class="card card-promo">
-                    <img
-                      src="/assets/images/dress_2.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text description mt-3">
-                        Dress with Round Neckline & Long Sleeves
-                      </p>
-                      <p class="description mt-2">$120</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="mt-2 mt-lg-1 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6"
-                >
-                  <div class="card card-promo">
-                    <img
-                      src="/assets/images/dress_3.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text description mt-3">
-                        Dress with Round Neckline & Long Sleeves
-                      </p>
-                      <p class="description mt-2">$120</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="mt-2 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6"
-                >
-                  <div class="card card-promo">
-                    <img
-                      src="/assets/images/dress_4.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text description mt-3">
-                        Dress with Round Neckline & Long Sleeves
-                      </p>
-                      <p class="description mt-2">$120</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="mt-2 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6"
-                >
-                  <div class="card card-promo">
-                    <img
-                      src="/assets/images/dress_5.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text description mt-3">
-                        Dress with Round Neckline & Long Sleeves
-                      </p>
-                      <p class="description mt-2">$120</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="mt-2 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6"
-                >
-                  <div class="card card-promo">
-                    <img
-                      src="/assets/images/dress_6.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text description mt-3">
-                        Dress with Round Neckline & Long Sleeves
-                      </p>
-                      <p class="description mt-2">$120</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="mt-2 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6"
-                >
-                  <div class="card card-promo">
-                    <img
-                      src="/assets/images/dress_1.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text description mt-3">
-                        Dress with Round Neckline & Long Sleeves
-                      </p>
-                      <p class="description mt-2">$120</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="mt-2 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6"
-                >
-                  <div class="card card-promo">
-                    <img
-                      src="/assets/images/dress_2.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text description mt-3">
-                        Dress with Round Neckline & Long Sleeves
-                      </p>
-                      <p class="description mt-2">$120</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="mt-2 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6"
-                >
-                  <div class="card card-promo">
-                    <img
-                      src="/assets/images/dress_3.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text description mt-3">
-                        Dress with Round Neckline & Long Sleeves
-                      </p>
-                      <p class="description mt-2">$120</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="mt-2 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6"
-                >
-                  <div class="card card-promo">
-                    <img
-                      src="/assets/images/dress_4.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text description mt-3">
-                        Dress with Round Neckline & Long Sleeves
-                      </p>
-                      <p class="description mt-2">$120</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="mt-2 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6"
-                >
-                  <div class="card card-promo">
-                    <img
-                      src="/assets/images/dress_5.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text description mt-3">
-                        Dress with Round Neckline & Long Sleeves
-                      </p>
-                      <p class="description mt-2">$120</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="mt-2 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6"
-                >
-                  <div class="card card-promo">
-                    <img
-                      src="/assets/images/dress_6.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <p class="card-text description mt-3">
-                        Dress with Round Neckline & Long Sleeves
-                      </p>
-                      <p class="description mt-2">$120</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="row" id="dress-list"></div>
               <!-- Product End -->
             </div>
           </div>
         </div>
       </section>
-      <!-- End for Changing -->
 
       <section class="mt-4">
         <div class="container subscription">
           <div class="row">
-            <div class="subs-invert col-xxl-12 col-xl-12 col-lg-12">
+            <div class="subs col-xxl-12 col-xl-12 col-lg-12">
               <h3>Subscribe to our Newsletter</h3>
               <p class="mt-4">
                 To get discount on the first purchase and access to closed
                 shares and sales.
               </p>
+              <span class="text-white"></span>
               <div class="new-form mt-4">
-                <div class="input-container-invert">
+                <div class="input-container">
                   <iconify-icon
                     width="1.5em"
-                    color="#ddd"
+                    class="text-white"
                     icon="material-symbols:mail"
                   ></iconify-icon>
-                  <input type="email" placeholder="Your mail" />
+                  <input
+                    type="email"
+                    id="subscribeHome"
+                    placeholder="Your mail"
+                  />
                 </div>
-                <button class="ms-2">Subscribe</button>
+
+                <button id="sub-btn" class="ms-2">Subscribe</button>
               </div>
             </div>
           </div>
@@ -1250,7 +415,7 @@
                   </ul>
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                  <h4 class="mt-4 mt-sm-3 mt-md-0 mt-lg-0">Aling Nena</h4>
+                  <h4 class="mt-xs-4 mt-sm-3 mt-md-0 mt-lg-0">Aling Nena</h4>
                   <p>122 Calamba City, Laguna</p>
                 </div>
               </div>
@@ -1259,15 +424,7 @@
         </div>
       </footer>
     </main>
-    <script type="module" src="./assets/js/script.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/0ebaa7facf.js"
-      crossorigin="anonymous"
-    ></script>
+    <script type="module" src="./assets/js/women.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

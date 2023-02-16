@@ -2,11 +2,13 @@ class Product {
 
     products =[
         {
+         "id": 1,
          "category": "Women",
          "type": "Active Wear",
          "product_name": "Performance Joggers",
          "descriptions": "Give your work-from-home uniform a cozy upgrade with these soft  relaxed joggers that are also stylish enough for errands.",
          "price": "PHP 5 524.64",
+         "price_int": 5524.64,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/e52b3d19-7611-4b25-9342-f46ce7a75975.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/4429bf87-78b1-4655-852b-e3dee70cc62e.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/7e816f0f-980d-4546-b2a2-0f4de1ded8de.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -14,11 +16,13 @@ class Product {
          "promo": "YES"
         },
         {
+         "id": 2,
          "category": "Women",
          "type": "Active Wear",
          "product_name": "Live In High Waist Leggings",
          "descriptions": "Built from moisture-wicking fabric and fitted with a no-slip waistband  these stretchy  figure-sculpting leggings keep you cool as your workout warms up.",
          "price": "PHP 3 467.60",
+         "price_int": 3467.6,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/532f599c-3846-476d-a41f-7863625b22fa.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/11b782e0-99dc-45a2-9b6a-5ce7af60addc.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/e3a12a1a-c5a4-4f9f-a2a2-69b403bf02cc.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -26,11 +30,13 @@ class Product {
          "promo": "YES"
         },
         {
+         "id": 3,
          "category": "Women",
          "type": "Active Wear",
          "product_name": "Harmony Crewneck Sweatshirt",
          "descriptions": "Raglan sleeves further the sporty vibe of this solid crewneck sweatshirt that'll become a staple piece in your workout or athleisure rotation.",
          "price": "PHP 3 467.60",
+         "price_int": 3467.6,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/9463cc65-9eed-4a4b-a77c-8037fca50822.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/71a9954e-a08f-49f8-bd83-3a79538b209d.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/4d4262c2-eab2-4def-8f9e-c8d05accec99.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -38,11 +44,13 @@ class Product {
          "promo": "YES"
         },
         {
+         "id": 4,
          "category": "Women",
          "type": "Active Wear",
          "product_name": "Dri-FIT Go High Waist 7\/8 Leggings",
          "descriptions": "A wide  high waistband provides superior support in second-skin leggings featuring signature Dri-FIT technology and plenty of side pockets for essentials.",
          "price": "PHP 6 465.01",
+         "price_int": 6465.01,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/c010d445-21a9-41e1-8c9c-a1261d2d7f4c.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/21075b56-9771-4bdc-8e5f-9d6ab6f4f49b.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/a7d818d9-bfa6-49ee-9a9c-76321c33c029.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -50,11 +58,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 5,
          "category": "Women",
          "type": "Active Wear",
          "product_name": "Phoenix Fleece Crewneck Sweatshirt",
          "descriptions": "Dropped shoulders and an oversized fit bring throwback charm to a cozy fleece sweatshirt with an embroidered Swoosh on the chest.",
          "price": "PHP 3 288.93",
+         "price_int": 3288.93,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/3767268a-06be-4d83-b01f-bd7c06f85d5a.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/e2ab4a18-e00d-4dde-8143-5b783c4acd0b.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/20f90e77-4771-4673-93a9-f848c3c3cc01.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -62,11 +72,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 6,
          "category": "Women",
-         "type": "Coats &amp; Jackets",
+         "type": "Coats",
          "product_name": "Amazing Cozy Wrap Jacket",
          "descriptions": "Perfect for getting cozy post workout  this drape-front jacket in a comfy knit features wrap styling and a cuddly drawstring neckline.",
          "price": "PHP 3 138.47",
+         "price_int": 3138.47,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/43c1901a-59c3-4e66-88d9-1eeb9ce36a6a.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/031c1ffe-5802-4c34-a1e2-1101cc202f55.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/a15e083d-803f-4813-8a46-8963d10466dc.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -74,11 +86,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 7,
          "category": "Women",
-         "type": "Coats &amp; Jackets",
+         "type": "Coats",
          "product_name": "Boyfriend Blazer",
          "descriptions": "Crisp notched lapels and faux flap pockets lend classic detail to this smooth blazer that is an essential for office looks.",
          "price": "PHP 7 581.69",
+         "price_int": 7581.69,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/3b865c89-ff03-494d-afe5-0e78dc46b4c0.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/8426ac55-0948-4845-8b20-08e75a96b7ee.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/c3e65ca1-cd8f-4134-8a87-c8a0b223c6b4.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -86,11 +100,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 8,
          "category": "Women",
-         "type": "Coats &amp; Jackets",
+         "type": "Coats",
          "product_name": "Jersey Blazer",
          "descriptions": "This closet-staple blazer is crafted from soft  stretchy jersey fabric with a relaxed one-button fit.",
          "price": "PHP 2 938.05",
+         "price_int": 2938.05,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/50457286-a890-44a5-8bac-63ae3671d032.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/929cec32-0423-4e6e-b8f2-6875b21abf1a.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/d2ec67f3-b903-426d-9452-b7eae15df560.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -98,11 +114,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 9,
          "category": "Women",
          "type": "Dresses",
          "product_name": "Amira Tiered Cotton Midi Dress",
          "descriptions": "Lightweight gauzy cotton is shaped into this pretty midi dress designed with a flowy tiered skirt that sways with every step you take.",
          "price": "PHP 2 292.14",
+         "price_int": 2292.14,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/cc8dec3e-b657-4970-b818-bee1b5a58959.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/8095ee10-943f-4b74-8511-1bb5e464df05.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/d1888820-875c-4d7c-a365-c1397dbdead8.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -110,11 +128,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 10,
          "category": "Women",
          "type": "Dresses",
          "product_name": "Adorning Glances Ruffle Gown",
          "descriptions": "Frothy ruffles trim the bodice and shoulder straps of this dreamy chiffon gown finished with an alluring thigh-high slit at the hem.",
          "price": "PHP 2 327.40",
+         "price_int": 2327.4,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/aafe54a9-051d-4e41-8476-cc1faf630572.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/69fa3284-2181-4d8f-a6d6-c289556adbdf.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/30353e31-ede2-4405-9504-5c13ee250f49.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -122,11 +142,13 @@ class Product {
          "promo": "YES"
         },
         {
+         "id": 11,
          "category": "Women",
          "type": "Dresses",
          "product_name": "Laine Long Sleeve Dress",
          "descriptions": "Romantic pink and red roses illustrate an enchanting dress showcasing voluminous sleeves and vintage-inspired smocking at the waist.",
          "price": "PHP 2 618.33",
+         "price_int": 2618.33,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/40e8a880-a280-4387-8248-1f276d68843f.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/01fc7a59-c7cf-4f42-9dae-28e5752ea7f9.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/d3ce0448-8c06-44c6-9d7b-e6780eddf1a1.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -134,11 +156,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 12,
          "category": "Women",
          "type": "Dresses",
          "product_name": "Floral Long Sleeve Satin Midi Dress",
          "descriptions": "Turn heads in this shiny satin midi dress covered in an abstract floral print and finished with a ruffle-trim slit at the hem.",
          "price": "PHP 2 844.60",
+         "price_int": 2844.6,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/cab3bda3-d7ff-4984-8401-f7e737cf8d51.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/7730c2f5-80e4-468d-be81-18ca8a996b86.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/6d06a13f-fee8-49fe-bece-5b5276559a2a.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -146,11 +170,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 13,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Ribcage Ripped Ankle Straight Leg Jeans",
          "descriptions": "Take your casual look up a notch with sky-high  low-stretch ankle jeans that define your waist and relax into a true straight-leg profile.",
          "price": "PHP 2 856.36",
+         "price_int": 2856.36,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/66fdfcb7-fb61-4225-935e-16b31dc94bf0.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/a4540c9e-2097-4655-b0b1-2b34169d29ff.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/3015e08a-346b-48e7-a0c6-ac73e3a3a6d2.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -158,11 +184,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 14,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Wedgie Ripped High Waist Crop Straight Leg Jeans",
          "descriptions": "These nonstretch jeans with a busted knee have a cheeky  lifting seat and a high waist to show off your curves and make you feel like a '90s supermodel.",
          "price": "PHP 2 538.98",
+         "price_int": 2538.98,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/a8602735-3afa-4a3f-ae5d-a5a0cf7ea16f.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/b3fe6f8e-8d21-477c-b96d-eab7670c5c6b.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/391e11b4-f424-406b-bf96-abe962db86aa.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -170,11 +198,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 15,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Marilyn Straight Leg Jeans",
          "descriptions": "Soft  stretchy straight-leg jeans create a streamlined silhouette and feature exclusive lift-tuck technology to help flatten the tummy and lift the rear.",
          "price": "PHP 4 654.81",
+         "price_int": 4654.81,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/11e060e5-141a-4646-a103-7239feb2f514.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/372d0306-399c-4796-bd59-7f089327b559.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/6ee96c6c-c42b-48c0-a6d9-83106435cf02.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -182,11 +212,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 16,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Ab-Solution High Waist Itty Bitty Bootcut Jeans",
          "descriptions": "Strategic fading adds to the relaxed feel of stretch-denim jeans featuring a slightly flared leg and a fit system that's designed to comfortably shape and hold.",
          "price": "PHP 5 172.01",
+         "price_int": 5172.01,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/51a8e341-56a4-4e85-9729-6cef2cdfe4e7.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/f6d27119-baca-4d91-973c-eca527adb6c3.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/008d51b3-6357-483d-acd2-87c9784e5352.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -194,11 +226,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 17,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Rider Skimp High Waist Straight Leg Jeans",
          "descriptions": "Cut from cotton with a little bit of stretch  these high-waisted jeans with a straight leg will soon be your comfy  no-fuss favorites.",
          "price": "PHP 10 202.96",
+         "price_int": 10202.96,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/9d4a08b4-2b95-4eb3-9b14-8f7c33b3a1ac.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/9fe400c4-a120-4234-9d5f-78e6157beaa1.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/065296c4-b123-4183-a292-6f27da7c96fc.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -206,11 +240,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 18,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Leena High Waist Raw Hem Wide Leg Jeans",
          "descriptions": "Finished with neatly frayed hems  these wide-leg jeans are made from soft stretch denim that offers excellent shape recovery and a true vintage-inspired look.",
          "price": "PHP 7 402.43",
+         "price_int": 7402.43,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/a4980d44-6cd9-426e-8993-0629a9197a17.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/1184f188-e90b-4d65-a072-cf07c273cd6a.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/c7330041-b1ef-43fa-9814-39621947f948.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -218,11 +254,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 19,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Levi’ Ribcage Ripped High Waist Ankle Straight Leg Jeans",
          "descriptions": "Take your casual look up a notch with sky-high  low-stretch jeans that define your waist and relax into a true straight-leg profile.",
          "price": "PHP 2 538.98",
+         "price_int": 2538.98,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/12afa5ee-3abf-4bdf-96e5-bb7680c66d33.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/e0c05694-fd3c-433e-8a7b-0b5b100b0556.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/b6cfcd9d-a676-4fb9-bbd6-2f9e074f2aac.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -230,11 +268,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 20,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Sienna High Waist Wide Leg Jeans",
          "descriptions": "Groovy wide legs and a faded wash make these soft and stretchy jeans a laid-back look for casual days.",
          "price": "PHP 6 112.37",
+         "price_int": 6112.37,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/e328b9af-a58a-4e40-a3e6-156d8759eec9.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/e328b9af-a58a-4e40-a3e6-156d8759eec9.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/e328b9af-a58a-4e40-a3e6-156d8759eec9.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -242,11 +282,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 21,
          "category": "Men",
          "type": "Activewear",
          "product_name": "Sunday Performance Jogger Sweatpants",
          "descriptions": "Stretchy  moisture-wicking fabric keeps you going at any intensity in lightweight sweatpants sporting multiple zip pockets for stowing keys and energy gels.",
          "price": "PHP 5 759.73",
+         "price_int": 5759.73,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/4414f97d-cadf-41a4-ba5b-9aa8e5a0a580.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/111e3bbd-f66e-46db-8c1d-6bb61205b626.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/a889a0b0-d71d-4587-9456-78beb09c85d1.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -254,11 +296,13 @@ class Product {
          "promo": "YES"
         },
         {
+         "id": 22,
          "category": "Men",
          "type": "Activewear",
          "product_name": "Sportswear Men's Club Pocket Fleece Joggers",
          "descriptions": "An embroidered Swoosh marks the pocket of these jogger-style sweatpants made for comfort from fleece with a sporty fit that slims at the ankle.",
          "price": "PHP 2 759.97",
+         "price_int": 2759.97,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/fc36e91f-4955-406f-aa2d-467e0bf7a8b5.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/bd061abf-885f-4caf-a908-7be1fcb98cbc.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/67343733-4326-4395-ae8b-78e5811b8e89.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -266,11 +310,13 @@ class Product {
          "promo": "YES"
         },
         {
+         "id": 23,
          "category": "Men",
          "type": "Activewear",
          "product_name": "Delta Short Sleeve Piqué Performance Polo",
          "descriptions": "Sweat-wicking Polartec Delta™ mesh keeps you dry and cool in a polo sporting a stretchy piqué knit and the eco-smart comfort of sustainably produced lyocell.",
          "price": "PHP 3 361.80",
+         "price_int": 3361.8,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/376868a6-4bf4-49db-9548-ad965411609a.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/c99a0ad2-8835-482e-b808-63d236412cb5.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/a7f1cb6d-9e43-4242-a409-8e5d2d31edab.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -278,11 +324,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 24,
          "category": "Men",
          "type": "Activewear",
          "product_name": "Strato Slim Fit Crewneck Tech T-Shirt",
          "descriptions": "Moisture-wicking tech fabric means easy comfort on the trails in this sporty  slim-cut T-shirt.",
          "price": "PHP 3 173.73",
+         "price_int": 3173.73,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/6af663de-257e-4cfb-ad85-3e9a254e3973.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/23ace0fa-1413-4d7d-b900-677e847fda04.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/9f3ba14b-1920-462d-b44d-cf1cbb14f6e4.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -290,11 +338,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 25,
          "category": "Men",
          "type": "Activewear",
          "product_name": "Sportswear Club Hoodie",
          "descriptions": "Cotton-rich fleece keeps you comfy in a street-ready hoodie with a bold Swoosh logo on the chest.",
          "price": "PHP 2 759.97",
+         "price_int": 2759.97,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/4e1ba200-4f14-4a56-a880-d5e063a89ddd.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/6c5c7918-591c-401a-b5e9-4fb80b65427b.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/02686470-8ced-42cf-a3be-db642fdc354d.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -302,11 +352,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 26,
          "category": "Men",
-         "type": "Coats &amp; Jackets",
+         "type": "Coats",
          "product_name": "Check One-Button Skinny Suit Jacket",
          "descriptions": "Neat  textured checks enhance the crisp  modern style of this one-button suit jacket in a slim fit.",
          "price": "PHP 4 907.53",
+         "price_int": 4907.53,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/a14c3934-7f3c-4192-b19d-81ce9f3f88aa.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/d0c3f3f5-4ff0-40e3-9b9a-71f9c4fda549.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/12a769b5-b3b5-4da6-9c8a-eca7a142df27.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -314,11 +366,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 27,
          "category": "Men",
-         "type": "Coats &amp; Jackets",
+         "type": "Coats",
          "product_name": "Extra Trim Fit Sport Coat",
          "descriptions": "Patch pockets accent this classically styled sport coat with a bit of stretch for comfort and an extra-trim fit.",
          "price": "PHP 7 017.47",
+         "price_int": 7017.47,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/e19c7bfb-a1ca-4fbf-991c-26c76934580d.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/b2219968-1cf2-4fb4-b74d-965e7e7b694f.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/1a12c4dc-0141-4468-9b32-4a3f497ad6e6.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -326,11 +380,13 @@ class Product {
          "promo": "YES"
         },
         {
+         "id": 28,
          "category": "Men",
-         "type": "Coats &amp; Jackets",
+         "type": "Coats",
          "product_name": "Skinny Suit Jacket",
          "descriptions": "Stride through the office with confidence in this sleek sport coat made with notched lapels and designed for a slim  tapered fit.",
          "price": "PHP 7 111.51",
+         "price_int": 7111.51,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/59028f8f-d052-45f6-857f-93196147b473.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/8461b200-438a-4725-ac11-8a239d0bdd99.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/d0c0220c-3f42-438d-8b4a-d7aa6c8f9858.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -338,11 +394,13 @@ class Product {
          "promo": "YES"
         },
         {
+         "id": 29,
          "category": "Men",
-         "type": "Coats &amp; Jackets",
+         "type": "Coats",
          "product_name": "Skinny Washed Cotton Blend Blazer",
          "descriptions": "Crafted with lightweight washed-cotton fabric  this slim-fitting single-breasted blazer feels as nice as it looks.",
          "price": "PHP 4 416.78",
+         "price_int": 4416.78,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/7e7b259b-0efd-4073-830f-1d725dd6bfa2.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/1336812c-a355-42ae-8317-8b864e3de172.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/a631259d-5b43-4050-b126-4afa4557759e.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -350,11 +408,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 30,
          "category": "Kids",
          "type": "Active Wear",
          "product_name": "Restore Soft Pocket Leggings",
          "descriptions": "Soft and shapely  these high-waisted leggings feature a high  wide waistband  roomy pockets and a sporty comfort fit.",
          "price": "PHP 1 585.10",
+         "price_int": 1585.1,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/3fa52804-5347-40b1-a784-8a9ee94f1fc7.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/5d75e5f4-3238-43a9-816d-2785a09b6344.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/3fa52804-5347-40b1-a784-8a9ee94f1fc7.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -362,11 +422,13 @@ class Product {
          "promo": "YES"
         },
         {
+         "id": 31,
          "category": "Kids",
          "type": "Active Wear",
          "product_name": "Kids' Elite Basketball Shorts",
          "descriptions": "Help your kid take on the court in comfort and style with these elastic-waist basketball shorts featuring Dri-FIT moisture-wicking technology.",
          "price": "PHP 1 128.44",
+         "price_int": 1128.44,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/66ef27fc-a31b-4c70-9a27-3b6a0fb3f11a.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/d36c7039-4483-41fa-b72a-5219bdbbb2be.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/92438871-8b11-4ed2-a4ed-9b5f4f0c5f8c.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -374,11 +436,13 @@ class Product {
          "promo": "YES"
         },
         {
+         "id": 32,
          "category": "Kids",
          "type": "Active Wear",
          "product_name": "Kids' Peaceful Twist T-Shirt",
          "descriptions": "A twisty  knotted hem updates a short-sleeve T-shirt in a supersoft and stretchy knit.",
          "price": "PHP 766.99",
+         "price_int": 766.99,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/ef8e23ca-6892-407d-8775-9954e0e39d3f.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/9b0c2134-3c44-4ef2-9269-877172eaff3c.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/ef8e23ca-6892-407d-8775-9954e0e39d3f.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -386,11 +450,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 33,
          "category": "Kids",
          "type": "Active Wear",
          "product_name": "Kids' Sport Training Pants",
          "descriptions": "No descriptions",
          "price": "PHP 1 114.92",
+         "price_int": 1114.92,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/eccdfafe-2274-4a40-a973-e0780d2eaa33.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/5fc33bb7-3bce-46dd-b740-e3df19ada7fc.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/58686e5a-f18b-4a54-a5a3-cb82512b6844.jpeg?crop=pad&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -398,11 +464,13 @@ class Product {
          "promo": "YES"
         },
         {
+         "id": 34,
          "category": "Kids",
          "type": "Active Wear",
          "product_name": "Kids' Training Pants",
          "descriptions": "Keep your active child comfortable while moving in performance-ready training pants cut from signature Dri-FIT technology that keeps them cool and dry.",
          "price": "PHP 2 350.91",
+         "price_int": 2350.91,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/90889d11-a3d8-4863-9dce-0130b887bd61.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/bda09865-ef40-4260-b682-da6c935b1daf.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/8510e880-81c5-469b-af1b-8bb8076a5790.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -410,11 +478,13 @@ class Product {
          "promo": "YES"
         },
         {
+         "id": 35,
          "category": "Kids",
          "type": "Active Wear",
          "product_name": "Live In Reversible Yoke Leggings",
          "descriptions": "Essential high-waist leggings are stretchy  supportive and reversible for easy everyday wear.",
          "price": "PHP 1 056.15",
+         "price_int": 1056.15,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/8d602c30-8290-432a-908c-da399cb61168.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/4be241c7-cd3c-4869-a32f-b1cf91008296.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/4c2061c0-0679-43e5-8fc2-2aaa4cc3c367.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -422,11 +492,13 @@ class Product {
          "promo": "YES"
         },
         {
+         "id": 36,
          "category": "Kids",
          "type": "Active Wear",
          "product_name": "Kids' Glacier Zip Hoodie",
          "descriptions": "A color-blocked hoodie made from fully recycled  pill-resistant fleece offers lightweight warmth and is an ideal layering piece for bundling your kiddo up.",
          "price": "PHP 2 938.64",
+         "price_int": 2938.64,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/25f084ea-9312-4e5a-8791-8c276f5c9be9.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/69fe3fc4-ae70-4cf2-9ba1-e8d586e88485.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/25f084ea-9312-4e5a-8791-8c276f5c9be9.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -434,11 +506,13 @@ class Product {
          "promo": "YES"
         },
         {
+         "id": 37,
          "category": "Kids",
          "type": "Pants",
          "product_name": "Grow with Me Organic Cotton Drawstring Pants",
          "descriptions": "Soft and supple shorts cut from organic cotton feature adorable rolled cuffs and a comfy stretch waist that accomodates your little one as they grow.",
          "price": "PHP 423.16",
+         "price_int": 423.16,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/51e4682c-333a-476e-9af8-beecc7df8381.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/51e4682c-333a-476e-9af8-beecc7df8381.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/89f9393d-5f0a-4feb-ade9-b0edffaa06ce.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -446,11 +520,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 38,
          "category": "Kids",
          "type": "Pants",
          "product_name": "Kids' Everyday Cotton Joggers",
          "descriptions": "Keep them cozy in these pure-cotton joggers topped with a comfy waist tie.",
          "price": "PHP 881.59",
+         "price_int": 881.59,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/444a332d-a574-4d84-8224-d73ea0ccd5da.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/444a332d-a574-4d84-8224-d73ea0ccd5da.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/c5fbd660-a3d3-4921-bd22-1da3a9fdd085.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -458,11 +534,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 39,
          "category": "Kids",
          "type": "Pants",
          "product_name": "Kids' Everyday Cotton Joggers Big Boy",
          "descriptions": "These lightweight jogger-style sweatpants made from cotton keep them cozy on weekend days and beyond.",
          "price": "PHP 681.76",
+         "price_int": 681.76,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/63fe794d-aa85-4b1c-9405-7129a5401076.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/63fe794d-aa85-4b1c-9405-7129a5401076.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/96fee6cf-5a1d-4eeb-9729-1dde03521782.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -470,11 +548,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 40,
          "category": "Kids",
          "type": "Pants",
          "product_name": "Kids' Moto Jogger Pants",
          "descriptions": "Moto-inspired stitching at the knees and a slim  modern fit update the look of supersoft jogger-style sweatpants topped by a comfy elastic waistband.",
          "price": "PHP 997.37",
+         "price_int": 997.37,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/1a5109f7-3d1b-4c7e-a3ef-f99891e4803b.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/1a5109f7-3d1b-4c7e-a3ef-f99891e4803b.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/13b6b837-4e94-404a-82d9-f0bd4a0701ae.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -482,11 +562,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 41,
          "category": "Kids",
          "type": "Pants",
          "product_name": "Kids' Distressed Denim Shorts",
          "descriptions": "Frayed hems hint at all the long days of play to come in these five-pocket shorts cut from rough-and-tumbled  faded stretch denim.",
          "price": "PHP 940.36",
+         "price_int": 940.36,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/abdfa34c-b7f6-45bf-bbfa-4f789ebc1d2a.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/abdfa34c-b7f6-45bf-bbfa-4f789ebc1d2a.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/d4bb8dd9-2f68-4410-838a-b3672003dd39.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
@@ -494,11 +576,13 @@ class Product {
          "promo": "NO"
         },
         {
+         "id": 42,
          "category": "Kids",
          "type": "Pants",
          "product_name": "Kids' Everyday Ribbed Leggings",
          "descriptions": "These layerable ribbed leggings made from a stretchy cotton blend feature banded cuffs and a comfy elastic waist.",
          "price": "PHP 614.18",
+         "price_int": 614.18,
          "image_1": "https:\/\/n.nordstrommedia.com\/id\/sr3\/3813c955-942a-4290-8e0f-81a921b3677a.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_2": "https:\/\/n.nordstrommedia.com\/id\/sr3\/3813c955-942a-4290-8e0f-81a921b3677a.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
          "image_3": "https:\/\/n.nordstrommedia.com\/id\/sr3\/ede77b0b-8032-4b20-8b47-4bd5c91fae89.jpeg?crop=pad&amp;pad_color=FFF&amp;format=jpeg&amp;w=780&amp;h=1196&amp;dpr=2",
