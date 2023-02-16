@@ -7,6 +7,10 @@
     <title>Home - Aling Nena</title>
     <link href="./assets/css/bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="container-fluid">
@@ -98,7 +102,10 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-xl-5 me-lg-4 me-md-3 d-flex" href="cart.html">
+                  <a
+                    class="nav-link me-xl-5 me-lg-4 me-md-3 d-flex"
+                    href="cart.html"
+                  >
                     <iconify-icon
                       width="1.4em"
                       icon="material-symbols:shopping-cart-rounded"
@@ -120,8 +127,11 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-xl-5 me-lg-4 me-md-3 d-flex" href="cart.html"
-                    >Cart <span id="cart-lg" class="ms-1 badge bg-danger">0</span></a
+                  <a
+                    class="nav-link me-xl-5 me-lg-4 me-md-3 d-flex"
+                    href="cart.html"
+                    >Cart
+                    <span id="cart-lg" class="ms-1 badge bg-danger">0</span></a
                   >
                 </li>
               </ul>
@@ -135,239 +145,172 @@
             <div
               class="women-header col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
             >
-              <span id="homeLabel">....</span>
+              <span id="homeLabel"></span>
             </div>
           </div>
         </div>
       </section>
-      <section class="mt-2">
-        <div class="container">
-          <div class="row">
-            <!-- All promo display here -->
-            <!-- <div
-              id="spin"
-              class="spinner-border text-primary mx-auto"
-              role="status"
-            >
-              <span class="visually-hidden">Loading...</span>
-            </div> -->
+      <div>
+        <div class="container w-75 padding-bottom-3x mb-1">
+          <!-- Alert-->
 
-            <article class="mt-2">
-              <div class="container">
-                <div class="row">
-                  <div class="single-post col-xxl-12 col-xl-12 col-lg-12">
-                    <!-- Single post -->
-                    <div class="row">
-                      <div class="post-title col-xxl-7 col-xl-7 col-lg-7">
-                        <h3 id="singleTitle">Dress with Round Neckline & Long Sleeves</h3>
-                        <div class="cart-wish mt-5">
-                          <div id="cartBtn" class="add-cart" style="cursor:pointer">
-                            <iconify-icon
-                              width="1em"
-                              class="icon-color"
-                              icon="material-symbols:shopping-cart-rounded"
-                            ></iconify-icon>
-                            <span class="ms-3">Add To Cart</span>
-                          </div>
-                          <!-- <div class="wish-btn ms-3">
-                            <iconify-icon
-                              width="1.5em"
-                              icon="mdi:cards-heart"
-                            ></iconify-icon>
-                          </div> -->
-                        </div>
-
-                        <h2 class="mt-5" id="singlePrice">$120</h2>
-                      </div>
-                      <div
-                        class="dress-img col-xxl-5 col-xl-5 col-lg-5 d-none d-lg-block"
-                      >
-                        <!-- image here using url -->
-                        <img
-                         id="singleImage"
-                          src="#"
-                          width="100%"
-                          height="100%"
-                        />
+          <!-- Shopping Cart-->
+          <div class="table-responsive shopping-cart">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Product Name</th>
+                  <th class="text-center">Quantity</th>
+                  <th class="text-center">Subtotal</th>
+                  <th class="text-center">
+                    <a class="btn btn-sm btn-outline-danger" href="#"
+                      >Clear Cart</a
+                    >
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="cartTable">
+                <!-- <tr>
+                  <td>
+                    <div class="product-item">
+                      <a class="product-thumb" href="#"
+                        ><img
+                          src="https://www.bootdey.com/image/220x180/FF0000/000000"
+                          alt="Product"
+                      /></a>
+                      <div class="product-info">
+                        <h4 class="product-title">
+                          <a href="#">Unionbay Park</a>
+                        </h4>
+                        <span><em>Size:</em> 10.5</span
+                        ><span><em>Color:</em> Dark Blue</span>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="mt-2">
-              <div class="container">
-                <div class="row">
-                  <div class="other-img col-xxl-12 col-xl-12 col-lg-12">
-                    <img
-                      id="image_1"
-                      class="ms-1 mt-1 border border-secondary"
-                      src="./assets/images/dress_1.jpg"
-                      alt=""
-                    />
-                    <img
-                    id="image_2"
-                      class="ms-1 mt-1 border border-secondary"
-                      src="./assets/images/dress_1.jpg"
-                      alt=""
-                    />
-                    <img
-                    id="image_3"
-                      class="ms-1 mt-1 border border-secondary"
-                      src="./assets/images/dress_1.jpg"
-                      alt=""
-                    />
-                    <img
-                    id="image_4"
-                      class="ms-1 mt-1 border border-secondary"
-                      src="./assets/images/dress_1.jpg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="mt-5">
-              <div class="container">
-                <div class="row">
-                  <div class="dress-desc col-xxl-12 col-xl-12 col-lg-12">
-                    <h3 id="prodName"></h3>
-                    <div class="tab-desc mt-3">
-                      <ul
-                        class="nav nav-tabs nav-justified"
-                        id="myTab"
-                        role="tablist"
-                      >
-                        <li class="nav-item" role="presentation">
-                          <button
-                            class="nav-link active tab-title"
-                            id="descriptions-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#descriptions-tab-pane"
-                            type="button"
-                            role="tab"
-                            aria-controls="descriptions-tab-pane"
-                            aria-selected="true"
-                          >
-                            Descriptions
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button
-                            class="nav-link tab-title"
-                            id="delivery-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#delivery-tab-pane"
-                            type="button"
-                            role="tab"
-                            aria-controls="delivery-tab-pane"
-                            aria-selected="false"
-                          >
-                            Delivery
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button
-                            class="nav-link tab-title"
-                            id="sizeguide-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#sizeguide-tab-pane"
-                            type="button"
-                            role="tab"
-                            aria-controls="sizeguide-tab-pane"
-                            aria-selected="false"
-                          >
-                            Size Guide
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button
-                            class="nav-link tab-title"
-                            id="returns-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#returns-tab-pane"
-                            type="button"
-                            role="tab"
-                            aria-controls="returns-tab-pane"
-                            aria-selected="false"
-                          >
-                            Returns
-                          </button>
-                        </li>
-                      </ul>
-                      <div class="tab-content" id="myTabContent">
-                        <div
-                          class="tab-pane fade show active"
-                          id="descriptions-tab-pane"
-                          role="tabpanel"
-                          aria-labelledby="descriptions-tab"
-                          tabindex="0"
-                        >
-                          <p class="mt-4" id="descriptions">
-                           
-                          </p>
-                        </div>
-                        <div
-                          class="tab-pane fade"
-                          id="delivery-tab-pane"
-                          role="tabpanel"
-                          aria-labelledby="delivery-tab"
-                          tabindex="0"
-                        >
-                          <p class="mt-4">
-                            <ol type="1">
-                                <li>Check your email for order updates: When you place an order online, the ecommerce website will usually send you a confirmation email with your order details. Keep an eye out for any additional emails with updates about the status of your order.</li>
-                                <li>Track your order: Once your order has been shipped, the ecommerce website may provide you with a tracking number. Use this to track the progress of your order and estimate its delivery date. You can usually find tracking information on the ecommerce website or by clicking a link in your shipping confirmation email.</li>
-                                <li>Be available for delivery: Make sure someone is available to receive the delivery at the shipping address you provided. If you won't be available, consider providing an alternative delivery address or selecting a delivery option that allows you to pick up the order at a convenient location.</li>
-                                <li>Inspect the package upon delivery: When your order arrives, inspect the package for any damage or signs of tampering before accepting the delivery. If you notice any issues, take photos of the package and contact the ecommerce website's customer service right away.</li>
-                                <li>Enjoy your purchase: Once your order has arrived and you've inspected the package, it's time to enjoy your new purchase! If you have any issues or questions about the product, reach out to the ecommerce website's customer service for assistance.</li>
-                            </ol>
-                          </p>
-                        </div>
-                        <div
-                          class="tab-pane fade"
-                          id="sizeguide-tab-pane"
-                          role="tabpanel"
-                          aria-labelledby="sizeguide-tab"
-                          tabindex="0"
-                        >
-                          <p class="mt-4">
-                            <ol>
-                                <li>Measure yourself: To use the size guide, you'll need to know your own measurements. Use a tape measure to measure your chest, waist, hips, inseam, and any other relevant body parts. Be sure to measure yourself while wearing the type of clothing you plan to wear with the item you're purchasing, as this can affect the fit.</li>
-                                <li>Compare your measurements: Once you have your measurements, compare them to the size guide for the item you want to buy. Look for the size that corresponds to your measurements. Keep in mind that different brands may have slightly different sizing, so it's always a good idea to check the size guide for each individual product.</li>
-                                <li>Consider the fit: The size guide will give you a good idea of what size to order, but you should also consider the fit of the item. Look for information on the product page about the cut or style of the item, as well as any information about whether it runs large or small. If you're unsure, consider ordering two sizes and returning the one that doesn't fit.</li>
-                                <li>Contact customer service: If you're still unsure about sizing, or if you have any questions about the product or the size guide, reach out to the ecommerce website's customer service for assistance. They may be able to provide additional guidance or suggest the best size based on your measurements.</li>
-                            </ol>
-                          </p>
-                        </div>
-                        <div
-                          class="tab-pane fade"
-                          id="returns-tab-pane"
-                          role="tabpanel"
-                          aria-labelledby="returns-tab"
-                          tabindex="0"
-                        >
-                          <p class="mt-4">
-                            <ol>
-                                <li>Check the return policy: Before attempting to return an item, make sure to review the ecommerce website's return policy. This should be listed on the website's "Shipping & Returns" page, or in the product description. Look for information about the timeframe for returns, the condition of the item when returned, and any restrictions or exceptions.</li>
-                                <li>Initiate the return: To begin the return process, log into your account on the ecommerce website, and navigate to the order history or return center. Find the item you wish to return, and follow the prompts to initiate the return. You may be asked to provide a reason for the return, and to indicate whether you would like a refund, exchange, or store credit.</li>
-                                <li>Repack the item: Once you have initiated the return, carefully repackage the item in the original packaging, if possible. If the original packaging is not available, use a sturdy box or envelope to protect the item during shipping. Be sure to include any accessories or documentation that came with the item.</li>
-                                <li>Print the return label: The ecommerce website should provide you with a pre-paid return label that you can print at home. If not, contact the customer service team for further assistance. Affix the label to the outside of the package, and be sure to cover or remove any old shipping labels or barcodes.</li>
-                                <li>Ship the item: Take the package to a shipping carrier, such as UPS or FedEx, and drop it off at the counter or in a designated drop box. Be sure to obtain a tracking number or shipping receipt for your records. The ecommerce website should provide you with an estimated date of arrival for your returned item.</li>
-                                <li>Await the refund or exchange: Once the ecommerce website receives your returned item and verifies its condition, they will issue a refund, exchange, or store credit, depending on your preference. This process may take a few days to several weeks, depending on the ecommerce website's policies and processing times.</li>
-                                <li>Follow up if needed: If you haven't received a refund or exchange within the expected timeframe, or if you have any other issues or questions related to your return, contact the ecommerce website's customer service team for further assistance.</li>
-                            </ol>
-                          </p>
-                        </div>
+                  </td>
+                  <td class="text-center">
+                    <div class="count-input">
+                      <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td class="text-center text-lg text-medium">$43.90</td>
+
+                  <td class="text-center">
+                    <a
+                      class="remove-from-cart"
+                      href="#"
+                      data-toggle="tooltip"
+                      title=""
+                      data-original-title="Remove item"
+                      ><i class="fa fa-trash"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product-item">
+                      <a class="product-thumb" href="#"
+                        ><img
+                          src="https://www.bootdey.com/image/220x180/5F9EA0/000000"
+                          alt="Product"
+                      /></a>
+                      <div class="product-info">
+                        <h4 class="product-title">
+                          <a href="#">Daily Fabric Cap</a>
+                        </h4>
+                        <span><em>Size:</em> XL</span
+                        ><span><em>Color:</em> Black</span>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </article>
+                  </td>
+                  <td class="text-center">
+                    <div class="count-input">
+                      <select class="form-control">
+                        <option>1</option>
+                        <option selected="">2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td class="text-center text-lg text-medium">$24.89</td>
+                  <td class="text-center">
+                    <a
+                      class="remove-from-cart"
+                      href="#"
+                      data-toggle="tooltip"
+                      title=""
+                      data-original-title="Remove item"
+                      ><i class="fa fa-trash"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product-item">
+                      <a class="product-thumb" href="#"
+                        ><img
+                          src="https://www.bootdey.com/image/220x180/9932CC/000000"
+                          alt="Product"
+                      /></a>
+                      <div class="product-info">
+                        <h4 class="product-title">
+                          <a href="#">Cole Haan Crossbody</a>
+                        </h4>
+                        <span><em>Size:</em> -</span
+                        ><span><em>Color:</em> Turquoise</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-center">
+                    <div class="count-input">
+                      <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td class="text-center text-lg text-medium">$200.00</td>
+                  <td class="text-center">
+                    <a
+                      class="remove-from-cart"
+                      href="#"
+                      data-toggle="tooltip"
+                      title=""
+                      data-original-title="Remove item"
+                      ><i class="fa fa-trash"></i
+                    ></a>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+          <div class="shopping-cart-footer">
+            <div class="column text-lg text-end">
+              Subtotal: <span id="totalCart" class="text-medium">$289.68</span>
+            </div>
+          </div>
+          <div class="shopping-cart-footer d-flex justify-content-between mt-2">
+            <div class="column">
+              <a class="btn btn-outline-secondary" href="index.html"
+                ><i class="icon-arrow-left"></i>&nbsp;Back to Shopping</a
+              >
+            </div>
+            <div class="column ps-5">
+              <a class="btn btn-success" href="#">Checkout</a>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <section class="mt-4">
         <div class="container subscription">
@@ -447,7 +390,7 @@
         </div>
       </footer>
     </main>
-    <script type="module" src="./assets/js/single.js"></script>
+    <script type="module" src="./assets/js/cart.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
