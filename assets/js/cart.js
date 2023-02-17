@@ -60,7 +60,7 @@ const getCart=()=>{
 }
 const displayTotal=(total)=>{
     const totalCart = document.querySelector('#totalCart');
-    totalCart.innerText=`PHP. ${total}`;
+    totalCart.innerText=`PHP. ${total.toLocaleString("en-US")}`;
 }
 const getCartInfo=(total)=>{
     total = 0;
@@ -120,7 +120,7 @@ const getCartInfo=(total)=>{
 
             let tdPrice = document.createElement('TD');
             tdPrice.setAttribute('class','text-center text-lg text-medium');
-            tdPrice.innerText=`${results[0].price}`;
+            tdPrice.innerText=`${results[0].price.toLocaleString("en-US")}`;
 
             let subtotal = ((results[0].price_int*productQuantity[i])*100)/100;
             total+=parseInt(subtotal);
@@ -128,7 +128,7 @@ const getCartInfo=(total)=>{
             let tdSubTotal = document.createElement('TD');
             tdSubTotal.setAttribute('class','text-center text-lg text-medium');
             tdSubTotal.setAttribute('id',`sub${productId[i]}`);
-            tdSubTotal.innerText=`PHP. ${subtotal}`;
+            tdSubTotal.innerText=`PHP. ${subtotal.toLocaleString("en-US")}`;
 
 
             let tdRemove = document.createElement('TD');
@@ -170,7 +170,7 @@ const getCartInfo=(total)=>{
                         let price = results[0].price_int;
                         let subt=((parseInt(newQuan)*parseInt(price))*100)/100;
                         const subDisplay = document.querySelector(`#sub${productId[i]}`);
-                        subDisplay.innerText=`PHP. ${subt}`;
+                        subDisplay.innerText=`PHP. ${subt.toLocaleString("en-US")}`;
                     }
                 }
                 let total_price=0;
@@ -238,6 +238,15 @@ clearBtn.addEventListener('click',()=>{
     total="";
     displayTotal(total);
     alert("All product in your cart is successfully removed.");
+});
+checkOutBtn.addEventListener('click',()=>{
+    localStorage.removeItem('cart');
+    localStorage.removeItem('cartQuantity');
+    getCart();
+    getCartInfo(total);
+    total="";
+    displayTotal(total);
+    alert("Thank you for purchasing to our store.");
 });
 
 getCart();

@@ -1,0 +1,14 @@
+<section class="mt-2">
+    <div class="container">
+      <div class="row" id="promoList">
+        <!-- All promo display here -->
+        <div
+          id="spin"
+          class="spinner-border text-primary mx-auto"
+          role="status"
+        >
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+  </section>
