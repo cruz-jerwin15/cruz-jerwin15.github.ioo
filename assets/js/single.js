@@ -37,7 +37,10 @@ cartBtn.addEventListener('click',()=>{
 
 const getCart=()=>{
     if(localStorage.getItem('cart')!=null){
+        console.log("TEST this");
         cartSm.setAttribute('style','display:inline-block');
+        cartLg.setAttribute('style','display:inline-block');
+        cartIcon.setAttribute('style','display:inline-block');
         let newId = JSON.parse(localStorage.getItem('cart'));
         let newQuantity =JSON.parse(localStorage.getItem('cartQuantity'));
         productId.splice(0,productId.length);
@@ -133,7 +136,7 @@ const showProduct=(results)=>{
 }
 
 getProduct();
-getCart();
+// getCart();
 
 
 
@@ -252,3 +255,15 @@ subBtn.addEventListener('click',()=>{
     console.log(TestArray);
     
 });
+const isLogin=()=>{
+    if(localStorage.getItem('login')=="true"){
+        
+        getCart();
+    }else{
+        cartSm.setAttribute('style','display:none');
+        cartLg.setAttribute('style','display:none');
+        cartIcon.setAttribute('style','display:none');
+    }
+}
+
+isLogin();

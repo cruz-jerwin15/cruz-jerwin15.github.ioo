@@ -7,6 +7,7 @@ const homeLabel = document.querySelector('#homeLabel');
 const searchLg = document.querySelector('#searchLg');
 const searchXl = document.querySelector('#searchXl');
 const categoryList = document.querySelector('#category-list');
+let productChoose;
 let btnCat;
 
 const fromInput = document.querySelector('#from-input');
@@ -17,17 +18,49 @@ let max=0;
 let min = 10000000;
 let categories="ALL";
 
+// Cart
+// Cart
+
+const cartSm = document.querySelector('#cart-sm');
+const cartLg= document.querySelector('#cart-lg');
+const cartIcon= document.querySelector('#cart-icon');
+
+const record ={};
+const recordArray=[];
+let productId=[];
+let productQuantity=[];
 
 
-// categoryDiv.forEach(cat=>{
-//     cat.addEventListener('click',()=>{
-//         console.log("TEST");
-//         console.dir(cat);
+const getCart=()=>{
+    if(localStorage.getItem('cart')!=null){
+        console.log("TEST this");
+        cartSm.setAttribute('style','display:inline-block');
+        cartLg.setAttribute('style','display:inline-block');
+        cartIcon.setAttribute('style','display:inline-block');
+        let newId = JSON.parse(localStorage.getItem('cart'));
+        let newQuantity =JSON.parse(localStorage.getItem('cartQuantity'));
+        productId.splice(0,productId.length);
+        productQuantity.splice(0,productQuantity.length);
 
-//     });
-// });
+        productId = newId.slice();
+        productQuantity = newQuantity.slice();
 
-
+        if(productId.length<=0){
+            cartSm.setAttribute('style','display:none');
+            cartLg.setAttribute('style','display:none');
+            cartIcon.setAttribute('style','display:none');
+        }else{
+            cartSm.innerText=productId.length;
+            cartLg.innerText=productId.length;
+            cartIcon.innerText=productId.length;
+        }
+       
+    }else{
+        cartSm.setAttribute('style','display:none');
+        cartLg.setAttribute('style','display:none');
+        cartIcon.setAttribute('style','display:none');
+    }
+}
 
 
 
@@ -247,21 +280,22 @@ const searchProduct=(search)=>{
 }
 
 const showPromo=()=>{
-
-    // spin.style="display:none";
+    
     homeLabel.innerText = "Women"
     const results = productList.products.filter(product => product.category == "Women");
     showProduct(results);
     
     displayMinandMaxPrice(results);
-   
+ 
 }
 
 const showProduct=(results)=>{
     results.forEach(result=>{
         
         let outerDiv = document.createElement('DIV');
-        outerDiv.setAttribute('class','mt-2 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12');
+        outerDiv.setAttribute('style','cursor:pointer');
+        outerDiv.setAttribute('id',result.id);
+        outerDiv.setAttribute('class','productChoose mt-2 mt-md-2 mt-sm-2 col-xxl-4 col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12');
             
         let cardDiv = document.createElement('DIV');
         cardDiv.setAttribute('class','card card-promo');
@@ -292,6 +326,14 @@ const showProduct=(results)=>{
         outerDiv.append(cardDiv);
         
         promoList.append(outerDiv);
+    });
+    productChoose = document.querySelectorAll('.productChoose');
+    productChoose.forEach(prod=>{
+        prod.addEventListener('click',()=>{
+
+            localStorage.setItem('singleProduct',prod.id);
+            window.open('single.html','_self');
+        })
     });
 }
 
@@ -362,7 +404,18 @@ btnCat.forEach(button=>{
     });
 });
 
+const isLogin=()=>{
+    if(localStorage.getItem('login')=="true"){
+        
+        getCart();
+    }else{
+        cartSm.setAttribute('style','display:none');
+        cartLg.setAttribute('style','display:none');
+        cartIcon.setAttribute('style','display:none');
+    }
+}
 
+isLogin();
 // categoryDiv.addEventListener('click',()=>{
 //     console.log("TEST");
 // });

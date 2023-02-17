@@ -78,7 +78,7 @@ removeBtn.addEventListener('click',()=>{
     let singleQuantity;
     for(let i=0;i<productId.length;i++){
         if(productId[i]==rem_id){
-            singleId=rem_id;
+            // singleId=rem_id;
             singleQuantity=i;
         }
     }

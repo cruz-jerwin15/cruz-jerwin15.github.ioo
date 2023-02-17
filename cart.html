@@ -156,147 +156,78 @@
 
           <!-- Shopping Cart-->
           <div class="table-responsive shopping-cart">
-            <table class="table">
+            <table class="table w-100">
               <thead>
                 <tr>
                   <th>Product Name</th>
                   <th class="text-center">Quantity</th>
+                  <th class="text-center">Price</th>
                   <th class="text-center">Subtotal</th>
                   <th class="text-center">
-                    <a class="btn btn-sm btn-outline-danger" href="#"
+                    <a
+                      id="clearBtnModal"
+                      data-bs-toggle="modal"
+                      data-bs-target="#clearModal"
+                      class="btn btn-sm btn-outline-danger"
+                      href="clearModal"
                       >Clear Cart</a
                     >
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="clearModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              Clear Cart
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            Please click 'Clear' button if you are sure to clear
+                            your cart.
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button
+                              data-bs-dismiss="modal"
+                              id="clearBtn"
+                              type="button"
+                              class="btn btn-danger"
+                            >
+                              Clear
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Modal -->
                   </th>
                 </tr>
               </thead>
-              <tbody id="cartTable">
-                <!-- <tr>
-                  <td>
-                    <div class="product-item">
-                      <a class="product-thumb" href="#"
-                        ><img
-                          src="https://www.bootdey.com/image/220x180/FF0000/000000"
-                          alt="Product"
-                      /></a>
-                      <div class="product-info">
-                        <h4 class="product-title">
-                          <a href="#">Unionbay Park</a>
-                        </h4>
-                        <span><em>Size:</em> 10.5</span
-                        ><span><em>Color:</em> Dark Blue</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="text-center">
-                    <div class="count-input">
-                      <select class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                  </td>
-                  <td class="text-center text-lg text-medium">$43.90</td>
-
-                  <td class="text-center">
-                    <a
-                      class="remove-from-cart"
-                      href="#"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="Remove item"
-                      ><i class="fa fa-trash"></i
-                    ></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="product-item">
-                      <a class="product-thumb" href="#"
-                        ><img
-                          src="https://www.bootdey.com/image/220x180/5F9EA0/000000"
-                          alt="Product"
-                      /></a>
-                      <div class="product-info">
-                        <h4 class="product-title">
-                          <a href="#">Daily Fabric Cap</a>
-                        </h4>
-                        <span><em>Size:</em> XL</span
-                        ><span><em>Color:</em> Black</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="text-center">
-                    <div class="count-input">
-                      <select class="form-control">
-                        <option>1</option>
-                        <option selected="">2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                  </td>
-                  <td class="text-center text-lg text-medium">$24.89</td>
-                  <td class="text-center">
-                    <a
-                      class="remove-from-cart"
-                      href="#"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="Remove item"
-                      ><i class="fa fa-trash"></i
-                    ></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="product-item">
-                      <a class="product-thumb" href="#"
-                        ><img
-                          src="https://www.bootdey.com/image/220x180/9932CC/000000"
-                          alt="Product"
-                      /></a>
-                      <div class="product-info">
-                        <h4 class="product-title">
-                          <a href="#">Cole Haan Crossbody</a>
-                        </h4>
-                        <span><em>Size:</em> -</span
-                        ><span><em>Color:</em> Turquoise</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="text-center">
-                    <div class="count-input">
-                      <select class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                  </td>
-                  <td class="text-center text-lg text-medium">$200.00</td>
-                  <td class="text-center">
-                    <a
-                      class="remove-from-cart"
-                      href="#"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="Remove item"
-                      ><i class="fa fa-trash"></i
-                    ></a>
-                  </td>
-                </tr> -->
-              </tbody>
+              <tbody id="cartTable"></tbody>
             </table>
           </div>
           <div class="shopping-cart-footer">
             <div class="column text-lg text-end">
-              Subtotal: <span id="totalCart" class="text-medium">$289.68</span>
+              Subtotal:
+              <span id="totalCart" class="text-medium fw-700">PHP. 0.00</span>
             </div>
           </div>
           <div class="shopping-cart-footer d-flex justify-content-between mt-2">
@@ -306,7 +237,57 @@
               >
             </div>
             <div class="column ps-5">
-              <a class="btn btn-success" href="#">Checkout</a>
+              <a
+                id="checkOutModal1"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#checkOutModal"
+                href="#checkOutModal"
+                >Checkout</a
+              >
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="checkOutModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Checkout Product
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button
+                        data-bs-dismiss="modal"
+                        id="checkOutBtn"
+                        type="button"
+                        class="btn btn-parimary"
+                      >
+                        Checkout
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
             </div>
           </div>
         </div>
