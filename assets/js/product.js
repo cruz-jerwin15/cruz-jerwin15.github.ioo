@@ -74,7 +74,7 @@ class Product {
         {
          "id": 6,
          "category": "Women",
-         "type": "Coats &amp; Jackets",
+         "type": "Coats",
          "product_name": "Amazing Cozy Wrap Jacket",
          "descriptions": "Perfect for getting cozy post workout  this drape-front jacket in a comfy knit features wrap styling and a cuddly drawstring neckline.",
          "price": "PHP. 3,138.47",
@@ -88,7 +88,7 @@ class Product {
         {
          "id": 7,
          "category": "Women",
-         "type": "Coats &amp; Jackets",
+         "type": "Coats",
          "product_name": "Boyfriend Blazer",
          "descriptions": "Crisp notched lapels and faux flap pockets lend classic detail to this smooth blazer that is an essential for office looks.",
          "price": "PHP. 7,581.69",
@@ -102,7 +102,7 @@ class Product {
         {
          "id": 8,
          "category": "Women",
-         "type": "Coats &amp; Jackets",
+         "type": "Coats",
          "product_name": "Jersey Blazer",
          "descriptions": "This closet-staple blazer is crafted from soft  stretchy jersey fabric with a relaxed one-button fit.",
          "price": "PHP. 2,938.05",
@@ -172,7 +172,7 @@ class Product {
         {
          "id": 13,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Ribcage Ripped Ankle Straight Leg Jeans",
          "descriptions": "Take your casual look up a notch with sky-high  low-stretch ankle jeans that define your waist and relax into a true straight-leg profile.",
          "price": "PHP. 2,856.36",
@@ -186,7 +186,7 @@ class Product {
         {
          "id": 14,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Wedgie Ripped High Waist Crop Straight Leg Jeans",
          "descriptions": "These nonstretch jeans with a busted knee have a cheeky  lifting seat and a high waist to show off your curves and make you feel like a '90s supermodel.",
          "price": "PHP. 2,538.98",
@@ -200,7 +200,7 @@ class Product {
         {
          "id": 15,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Marilyn Straight Leg Jeans",
          "descriptions": "Soft  stretchy straight-leg jeans create a streamlined silhouette and feature exclusive lift-tuck technology to help flatten the tummy and lift the rear.",
          "price": "PHP. 4,654.81",
@@ -214,7 +214,7 @@ class Product {
         {
          "id": 16,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Ab-Solution High Waist Itty Bitty Bootcut Jeans",
          "descriptions": "Strategic fading adds to the relaxed feel of stretch-denim jeans featuring a slightly flared leg and a fit system that's designed to comfortably shape and hold.",
          "price": "PHP. 5,172.01",
@@ -228,7 +228,7 @@ class Product {
         {
          "id": 17,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Rider Skimp High Waist Straight Leg Jeans",
          "descriptions": "Cut from cotton with a little bit of stretch  these high-waisted jeans with a straight leg will soon be your comfy  no-fuss favorites.",
          "price": "PHP. 10,202.96",
@@ -242,7 +242,7 @@ class Product {
         {
          "id": 18,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Leena High Waist Raw Hem Wide Leg Jeans",
          "descriptions": "Finished with neatly frayed hems  these wide-leg jeans are made from soft stretch denim that offers excellent shape recovery and a true vintage-inspired look.",
          "price": "PHP. 7,402.43",
@@ -256,7 +256,7 @@ class Product {
         {
          "id": 19,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Levi’ Ribcage Ripped High Waist Ankle Straight Leg Jeans",
          "descriptions": "Take your casual look up a notch with sky-high  low-stretch jeans that define your waist and relax into a true straight-leg profile.",
          "price": "PHP. 2,538.98",
@@ -270,7 +270,7 @@ class Product {
         {
          "id": 20,
          "category": "Women",
-         "type": "Jeans &amp; Denim",
+         "type": "Jeans",
          "product_name": "Sienna High Waist Wide Leg Jeans",
          "descriptions": "Groovy wide legs and a faded wash make these soft and stretchy jeans a laid-back look for casual days.",
          "price": "PHP. 6,112.37",
@@ -354,7 +354,7 @@ class Product {
         {
          "id": 26,
          "category": "Men",
-         "type": "Coats &amp; Jackets",
+         "type": "Coats",
          "product_name": "Check One-Button Skinny Suit Jacket",
          "descriptions": "Neat  textured checks enhance the crisp  modern style of this one-button suit jacket in a slim fit.",
          "price": "PHP. 4,907.53",
@@ -368,7 +368,7 @@ class Product {
         {
          "id": 27,
          "category": "Men",
-         "type": "Coats &amp; Jackets",
+         "type": "Coats",
          "product_name": "Extra Trim Fit Sport Coat",
          "descriptions": "Patch pockets accent this classically styled sport coat with a bit of stretch for comfort and an extra-trim fit.",
          "price": "PHP. 7,017.47",
@@ -382,7 +382,7 @@ class Product {
         {
          "id": 28,
          "category": "Men",
-         "type": "Coats &amp; Jackets",
+         "type": "Coats",
          "product_name": "Skinny Suit Jacket",
          "descriptions": "Stride through the office with confidence in this sleek sport coat made with notched lapels and designed for a slim  tapered fit.",
          "price": "PHP. 7,111.51",
@@ -396,7 +396,7 @@ class Product {
         {
          "id": 29,
          "category": "Men",
-         "type": "Coats &amp; Jackets",
+         "type": "Coats",
          "product_name": "Skinny Washed Cotton Blend Blazer",
          "descriptions": "Crafted with lightweight washed-cotton fabric  this slim-fitting single-breasted blazer feels as nice as it looks.",
          "price": "PHP. 4,416.78",
