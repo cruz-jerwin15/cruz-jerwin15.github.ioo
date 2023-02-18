@@ -58,9 +58,10 @@ const getCart=()=>{
         // clearBtnModal.setAttribute('disabled',true);
     }
 }
+
 const displayTotal=(total)=>{
     const totalCart = document.querySelector('#totalCart');
-    totalCart.innerText=`PHP. ${total.toLocaleString("en-US")}`;
+    totalCart.innerText=`PHP. ${total.toFixed(2)}`;
 }
 const getCartInfo=(total)=>{
     total = 0;
@@ -122,13 +123,13 @@ const getCartInfo=(total)=>{
             tdPrice.setAttribute('class','text-center text-lg text-medium');
             tdPrice.innerText=`${results[0].price.toLocaleString("en-US")}`;
 
-            let subtotal = ((results[0].price_int*productQuantity[i])*100)/100;
-            total+=parseInt(subtotal);
+            let subtotal = results[0].price_int*productQuantity[i];
+            total+=subtotal;
 
             let tdSubTotal = document.createElement('TD');
             tdSubTotal.setAttribute('class','text-center text-lg text-medium');
             tdSubTotal.setAttribute('id',`sub${productId[i]}`);
-            tdSubTotal.innerText=`PHP. ${subtotal.toLocaleString("en-US")}`;
+            tdSubTotal.innerText=`PHP. ${subtotal.toFixed(2)}`;
 
 
             let tdRemove = document.createElement('TD');
@@ -168,9 +169,9 @@ const getCartInfo=(total)=>{
                         productQuantity[i]=newQuan;
                         let results = productList.products.filter(product => product.id == productId[i]);
                         let price = results[0].price_int;
-                        let subt=((parseInt(newQuan)*parseInt(price))*100)/100;
+                        let subt=newQuan*price;
                         const subDisplay = document.querySelector(`#sub${productId[i]}`);
-                        subDisplay.innerText=`PHP. ${subt.toLocaleString("en-US")}`;
+                        subDisplay.innerText=`PHP. ${subt.toFixed(2)}`;
                     }
                 }
                 let total_price=0;
@@ -178,7 +179,7 @@ const getCartInfo=(total)=>{
                    
                     let results = productList.products.filter(product => product.id == productId[i]);
                     let price = results[0].price_int;
-                    let subt=((parseInt(productQuantity[i])*parseInt(price))*100)/100;
+                    let subt=productQuantity[i]*price;
                     total_price+=subt;
                 }
                 displayTotal(total_price);
